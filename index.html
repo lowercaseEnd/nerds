@@ -135,19 +135,19 @@
                 </p>
                 <ul class="percents-list">
                     <li>
-                        <strong>146</strong>
-                        <span>%</span>
+                        <strong class="percent-number">146</strong>
+                        <span class="percent">%</span>
                         <p>Уровень самоотдачи</p>
                     </li>
                     <li>
-                        <strong>100</strong>
-                        <span>%</span>
+                        <strong class="percent-number">100</strong>
+                        <span class="percent">%</span>
                         <p>Соблюдение сроков</p>
                     </li>
                     <li>
-                        <strong>50</strong>
-                        <span>%</span>
-                        <p>Минимальнаяпредоплата</p>
+                        <strong class="percent-number">50</strong>
+                        <span class="percent">%</span>
+                        <p>Минимальная предоплата</p>
                     </li>
                 </ul>
             </section>
@@ -175,13 +175,19 @@
             <img src="img/map.jpg" alt="">
             <ul class="soc-media">
                 <li>
-                    <img src="img/svg/vk-icon.svg" alt="vk.com">
+                    <a href="#" class="social-link">
+                        <img src="img/svg/vk-icon.svg" alt="vk.com">
+                    </a>
                 </li>
                 <li>
-                    <img src="img/svg/fb-icon.svg" alt="facebook.com">
+                    <a href="#" class="social-link">
+                        <img src="img/svg/fb-icon.svg" alt="facebook.com">
+                    </a>
                 </li>
                 <li>
-                    <img src="img/svg/insta-icon.svg" alt="instagram.com">
+                    <a href="#" class="social-link">
+                        <img src="img/svg/insta-icon.svg" alt="instagram.com">
+                    </a>
                 </li>
             </ul>
             <p>
@@ -189,5 +195,21 @@
                 Скидка 10% для друзей из социальных сетей.
             </p>
         </footer>
+        <form method="POST" action="" class="write-us">
+            <div class="name-form">
+                <label for="write-us-name">Ваше имя:</label>
+                <input id="write-us-name" type="text" placeholder="Имя Фамилия">
+            </div>
+            <div class="email-form">
+                <label for="write-us-email">Ваш email:</label>
+                <input id="write-us-email" type="email" placeholder="your@email.com">
+            </div>
+            <div class="message-form">
+                <label for="write-us-message">Текст письма:</label>
+                <textarea id="write-us-message" placeholder="В свободной форме:"></textarea>
+            </div>
+            <button class="modal button button-send" type="submit">Отправить</button>
+            <button class="modal button button-close" type="button">Закрыть</button>
+        </form>
     </body>
 </html>
