@@ -34,6 +34,45 @@
                 </h1>
             </nav>
         </header>
+        <main class="main-content">
+            <section class="filter-by">
+                <h2 class="visually-hidden">
+                    Отфильтровать предложения
+                </h2>
+                <form action="" method="POST" class="filter-by-range">
+                    <legend>СТОИМОСТЬ:</legend>
+                    <label for="price-range"></label>
+                    <input type="range" id="price-range">
+                    <ul class="price-range-numbers">
+                        <li>
+                            <p>
+                                До <span class="floor-price"></span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                До <span class="ceiling-price"></span>
+                            </p>
+                        </li>
+                    </ul>
+                </form>
+                <form action="" method="POST" class="filter-by-radio">
+                    <legend>СЕТКА:</legend>
+                    <div class="adaptive-radio">
+                        <label for="adaptive-grid">АДАПТИВНАЯ</label>
+                        <input id="adaptive-grid" type="radio" name="imposition">
+                    </div>
+                    <div class="fix-radio">
+                        <label for="fix-grid">ФИКСИРОВАННАЯ</label>
+                        <input id="fix-grid" type="radio" name="imposition">
+                    </div>
+                    <div class="fluid-radio">
+                        <label for="fluid-grid">РЕЗИНОВАЯ</label>
+                        <input id="fluid-grid" type="radio" name="imposition">
+                    </div>
+                </form>
+            </section>
+        </main>
         <footer class="main-footer">
             
                 <img src="img/map.jpg" alt="191186, Санкт-Петербург, 
@@ -73,22 +112,22 @@
                     <strong>Давайте дружить, это выгодно!</strong>
                     Скидка 10% для друзей из социальных сетей.
                 </p>
-            </footer>
-            <form method="POST" action="" class="write-us modal">
-                <div class="name-form">
-                    <label for="write-us-name">Ваше имя:</label>
-                    <input id="write-us-name" type="text" placeholder="Имя Фамилия">
-                </div>
-                <div class="email-form">
-                    <label for="write-us-email">Ваш email:</label>
-                    <input id="write-us-email" type="email" placeholder="your@email.com">
-                </div>
-                <div class="message-form">
-                    <label for="write-us-message">Текст письма:</label>
-                    <textarea id="write-us-message" placeholder="В свободной форме:"></textarea>
-                </div>
-                <button class="modal button button-send" type="submit">Отправить</button>
-                <button class="modal button button-close" type="button">Закрыть</button>
-            </form>
+        </footer>
+        <form method="POST" action="" class="write-us modal">
+            <div class="name-form">
+                <label for="write-us-name">Ваше имя:</label>
+                <input id="write-us-name" type="text" placeholder="Имя Фамилия">
+            </div>
+            <div class="email-form">
+                <label for="write-us-email">Ваш email:</label>
+                <input id="write-us-email" type="email" placeholder="your@email.com">
+            </div>
+            <div class="message-form">
+                <label for="write-us-message">Текст письма:</label>
+                <textarea id="write-us-message" placeholder="В свободной форме:"></textarea>
+            </div>
+            <button class="modal button button-send" type="submit">Отправить</button>
+            <button class="modal button button-close" type="button">Закрыть</button>
+        </form>
         </body>
     </html>
