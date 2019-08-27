@@ -35,67 +35,55 @@
             </nav>
         </header>
         <main class="main-content">
-            <section class="filter-by">
-                <h2 class="visually-hidden">
-                    Отфильтровать предложения
-                </h2>
-                <form action="" method="POST" class="filter-by-range">
-                    <legend>СТОИМОСТЬ:</legend>
-                    <label for="price-range"></label>
-                    <input type="range" id="price-range">
-                    <ul class="price-range-numbers">
-                        <li>
-                            <p>
-                                До <span class="floor-price"></span>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                До <span class="ceiling-price"></span>
-                            </p>
-                        </li>
-                    </ul>
+            <section class="filter">
+                <form method="POST" action="" class="filter-form">
+                    <div class="price-form">
+                        <legend>СТОИМОСТЬ:</legend>
+                        <input type="range" name="price">
+                        <p>От <span class="price-form">0</span> До <span class="price-form">15 000</span></p>
+                    </div>
+                    <div class="flex-form">
+                        <legend>СЕТКА:</legend>
+                        <div class="flex-adaptive">
+                            <label for="adaptive-radio">Адаптивная</label>
+                            <input name="flex" id="adaptive-radio" type="radio">
+                        </div>
+                        <div class="flex-fixed">
+                            <label for="fixed-radio">Адаптивная</label>
+                            <input name="flex" id="fixed-radio" type="radio">
+                        </div>
+                        <div class="flex-fluid">
+                            <label for="fluid-radio">Адаптивная</label>
+                            <input name="flex" id="fluid-radio" type="radio">
+                        </div>
+                    </div>
+                    <div class="feature-form">
+                        <legend>ОСОБЕННОСТИ:</legend>
+                        <div class="slider-checkbox-form">
+                                <label for="slider-checkbox">Слайдер</label>
+                                <input type="checkbox" id="slider-checkbox" class="visually-hidden">
+                            </div>
+                            <div class="advantages-checkbox-form">
+                                <label for="advantages-checkbox">Блок преимуществ</label>
+                                <input type="checkbox" id="advantages-checkbox" class="visually-hidden">
+                            </div>
+                            <div class="news-checkbox-form">
+                                <label for="news-checkbox">Новости</label>
+                                <input type="checkbox" id="news-checkbox" class="visually-hidden">
+                            </div>
+                            <div class="gallery-checkbox-form">
+                                <label for="gallery-checkbox">Галерея</label>
+                                <input type="checkbox" id="gallery-checkbox" class="visually-hidden">
+                            </div>
+                            <div class="cart-checkbox-form">
+                                <label for="cart-checkbox">Корзина</label>
+                                <input type="checkbox" id="cart-checkbox" class="visually-hidden">
+                            </div>
+                    </div>
+                    <button class="button button-filter" type="submit">ПОКАЗАТЬ</button>
                 </form>
-                <form action="" method="POST" class="filter-by-radio">
-                    <legend>СЕТКА:</legend>
-                    <div class="adaptive-radio">
-                        <label for="adaptive-grid">Адаптивная</label>
-                        <input id="adaptive-grid" type="radio" name="imposition">
-                    </div>
-                    <div class="fix-radio">
-                        <label for="fix-grid">Фиксированная</label>
-                        <input id="fix-grid" type="radio" name="imposition">
-                    </div>
-                    <div class="fluid-radio">
-                        <label for="fluid-grid">Резиновая</label>
-                        <input id="fluid-grid" type="radio" name="imposition">
-                    </div>
-                </form>
-                <form action="" method="POST" class="filter-by-checkbox">
-                    <legend>ОСОБЕННОСТИ:</legend>
-                    <div class="slider-checkbox-form">
-                        <label for="slider-checkbox">Слайдер</label>
-                        <input type="checkbox" id="slider-checkbox" class="visually-hidden">
-                    </div>
-                    <div class="advantages-checkbox-form">
-                        <label for="advantages-checkbox">Блок преимуществ</label>
-                        <input type="checkbox" id="advantages-checkbox" class="visually-hidden">
-                    </div>
-                    <div class="news-checkbox-form">
-                        <label for="news-checkbox">Новости</label>
-                        <input type="checkbox" id="news-checkbox" class="visually-hidden">
-                    </div>
-                    <div class="gallery-checkbox-form">
-                        <label for="gallery-checkbox">Галерея</label>
-                        <input type="checkbox" id="gallery-checkbox" class="visually-hidden">
-                    </div>
-                    <div class="cart-checkbox-form">
-                        <label for="cart-checkbox">Корзина</label>
-                        <input type="checkbox" id="cart-checkbox" class="visually-hidden">
-                    </div>
-                </form>
-                <button class="button button-filter" type="submit">ПОКАЗАТЬ</button>
             </section>
+            <!--Сделать сортировку-->
             <section class="sort-by">
                 <h2 class="visually-hidden">
                     Отсортировать
