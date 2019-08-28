@@ -50,7 +50,7 @@ a:focus{
   text-decoration-color: #fb565a;
 }
 /*Кнопки в разных состояниях*/
-a.button{
+.button{
   font: inherit;
 
   background-color: #fb565a;
@@ -58,13 +58,14 @@ a.button{
 
   padding: 5px 15px;
   margin: 0px;
+  border: 0px;
 
   text-decoration: none;
 }
-a.button:hover{
+.button:hover{
   background-color: #e74246;
 }
-a.button:focus{
+.button:focus{
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
 }
