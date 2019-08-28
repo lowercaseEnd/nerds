@@ -37,29 +37,6 @@ a{
   font-size: 55px;
   line-height: 55px;
 }
-/*Привести кнопки и некоторые сслыки к одному виду*/
-.button, .learn-more, .order{
-  font: inherit;
-
-  color: #fff;
-  background-color: #fb565a;
-
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 120px;
-  
-}
-.order-green{
-  background-color: #00ca74;
-}
-.order-yellow{
-  background-color: #efc84a;
-}
-.write-us-button{
-  width: 180px;
-}
 
 /*Ссылки в разных состояниях*/
 a:hover{
@@ -73,23 +50,43 @@ a:focus{
   text-decoration-color: #fb565a;
 }
 /*Кнопки в разных состояниях*/
-.order:hover{
-  color: #e74246;
+a.button{
+  font: inherit;
+
+  background-color: #fb565a;
+  color: #fff;
+
+  padding: 5px 15px;
+  margin: 0px;
+
+  text-decoration: none;
 }
-.order:focus{
-  color: #d7373b;
+a.button:hover{
+  background-color: #e74246;
 }
-.order-green:hover{
-  color: #00bc6c;
+a.button:focus{
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
-.order-green:focus{
-  color: #00aa62;
+a.button-green{
+  background-color: #00ca74;
 }
-.order-yellow:hover{
-  color: #eab534;
+a.button-yellow{
+  background-color: #efc84a;
 }
-.order-yellow:focus{
-  color: #e5a722;
+a.button-green:hover{
+  background-color: #00bc6c;
+}
+a.button-green:focus{
+  background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
+}
+a.button-yellow:hover{
+  background-color: #eab534;
+}
+a.button-yellow:focus{
+  background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
 }
 /*Настройка списков*/
 ul{
