@@ -111,3 +111,14 @@ h2 {
   font-size: 45px;
   line-height: 10px
 }
+.appeal{
+  font-size: 36px;
+  line-height: 36px
+}
+/*Шрифты на странице, которые отличаются от наследуемых в body*/
+.percent-about, .address-and-phone, .button{
+  line-height: 18px;
+}
+.discount-offer{
+  line-height: 22px;
+}
