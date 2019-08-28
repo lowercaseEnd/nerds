@@ -13,15 +13,18 @@ body{
   background-color: #fff;
 }
 
+a{
+  /*Убрать подчёркивания у ссылок */
+  text-decoration: none;
+}
 
 .main-header{
   background-color: #eeeeee;
-
- 
 }
 .main-nav, .cart{
   line-height: 30px;
 }
-a{
-  text-decoration: none;
+.main-point{
+  font-size: 55px;
+  line-height: 55px;
 }
