@@ -28,3 +28,22 @@ a{
   font-size: 55px;
   line-height: 55px;
 }
+/*Привести кнопки и некоторые сслыки к одному виду*/
+.button, .learn-more, .order{
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 120px;
+  background-color: #fb565a;
+}
+.order-green{
+  background-color: #00ca74;
+}
+.order-yellow{
+  background-color: #efc84a;
+}
+.write-us-button{
+  width: 180px;
+}
