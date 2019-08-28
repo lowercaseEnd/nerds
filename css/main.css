@@ -98,6 +98,14 @@ h2 {
 .company-name{
   font-size: 18px;
 }
+.sort-by-heading{
+  font-size: 18px;
+  line-height: 18px;
+}
+.modal-heading{
+  font-size: 45px;
+  line-height: 45px
+}
 /*Жирный шрифт на макете, который заголовком не является*/
 .main-point{
   font-size: 55px;
@@ -115,8 +123,16 @@ h2 {
   font-size: 36px;
   line-height: 36px
 }
+.modal-field{
+  line-height: 18px;
+}
+.filter-name{
+  font-size: 30px;
+  line-height: 30px;
+}
 /*Шрифты на странице, которые отличаются от наследуемых в body*/
-.percent-about, .address-and-phone, .button{
+.percent-about, .address-and-phone, .button, :placeholder-shown{
+  font:inherit;
   line-height: 18px;
 }
 .discount-offer{

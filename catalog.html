@@ -40,12 +40,12 @@
             <section class="filter">
                 <form method="POST" action="" class="filter-form">
                     <div class="price-form">
-                        <legend>СТОИМОСТЬ:</legend>
+                        <legend><strong class="filter-name">СТОИМОСТЬ:</strong></legend>
                         <input type="range" name="price">
                         <p>От <span class="price-form">0</span> До <span class="price-form">15 000</span></p>
                     </div>
                     <div class="flex-form">
-                        <legend>СЕТКА:</legend>
+                        <legend><strong class="filter-name">СЕТКА:</strong></legend>
                         <div class="flex-adaptive">
                             <label for="adaptive-radio">Адаптивная</label>
                             <input name="flex" id="adaptive-radio" type="radio">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="feature-form">
-                        <legend>ОСОБЕННОСТИ:</legend>
+                        <legend><strong class="filter-name">ОСОБЕННОСТИ:</strong></legend>
                         <div class="slider-checkbox-form">
                                 <label for="slider-checkbox">Слайдер</label>
                                 <input type="checkbox" id="slider-checkbox" class="visually-hidden">
@@ -85,13 +85,30 @@
                     <button class="button button-filter" type="submit">ПОКАЗАТЬ</button>
                 </form>
             </section>
-            <!--Сделать сортировку-->
             <section class="sort-by">
-                <h2 class="visually-hidden">
+                <h2>
                     Отсортировать
                 </h2>
-                <form action="" method="POST" class="sort-by-form">
-                    <legend></legend>
+                <ul class="sort-by-list">
+                    <li class="sort-by-price">
+                        <a href="#" class="sort-by-link">По цене</a>
+                    </diliv>
+                    <li class="sort-by-type">
+                        <a href="#" class="sort-by-link">По цене</a>
+                    </li>
+                    <li class="sort-by-name">
+                        <a href="#" class="sort-by-link">По цене</a>
+                    </li>
+                </ul>
+                <form action="" method="POST" class="asc-desc">
+                    <ul class="asc-desc-list">
+                        <li>
+                            <a href="#">По возрастанию</a>
+                        </li>
+                        <li>
+                            <a href="#">По убыванию</a>
+                        </li>
+                    </ul>
                 </form>
             </section>
             <section class="catalog">
