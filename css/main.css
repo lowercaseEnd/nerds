@@ -72,6 +72,25 @@ a:focus{
   text-decoration: underline;
   text-decoration-color: #fb565a;
 }
+/*Кнопки в разных состояниях*/
+.order:hover{
+  color: #e74246;
+}
+.order:focus{
+  color: #d7373b;
+}
+.order-green:hover{
+  color: #00bc6c;
+}
+.order-green:focus{
+  color: #00aa62;
+}
+.order-yellow:hover{
+  color: #eab534;
+}
+.order-yellow:focus{
+  color: #e5a722;
+}
 /*Настройка списков*/
 ul{
   /*Только у одного списка есть точки слева, поэтому отключаем*/
