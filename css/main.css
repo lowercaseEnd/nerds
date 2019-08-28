@@ -1,6 +1,6 @@
 
 body{
-  /*Стили для приведения к одному виду*/
+  /*Стили для приведения к одному виду в разных браузерах*/
   margin: 0px;
   padding: 0px;
 /*Настройка шрифтов как на макете*/
@@ -13,8 +13,17 @@ body{
   background-color: #fff;
 }
 
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}
+
 a{
-  /*Убрать подчёркивания у ссылок */
   text-decoration: none;
 }
 
@@ -30,13 +39,17 @@ a{
 }
 /*Привести кнопки и некоторые сслыки к одному виду*/
 .button, .learn-more, .order{
+  font: inherit;
+
   color: #fff;
+  background-color: #fb565a;
+
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
   width: 120px;
-  background-color: #fb565a;
+  
 }
 .order-green{
   background-color: #00ca74;
@@ -54,4 +67,47 @@ a:hover{
 }
 a:active{
   color: rgb(0, 0, 0, 0.3);
+}
+a:focus{
+  text-decoration: underline;
+  text-decoration-color: #fb565a;
+}
+/*Настройка списков*/
+ul{
+  /*Только у одного списка есть точки слева, поэтому отключаем*/
+  list-style-type: none;
+}
+.order-list li{
+  list-style-type: initial;
+  color: #fb565a;
+}
+.order-text{
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  background-color: #fff;
+}
+
+/*Заголовки*/
+h2 {
+  color: #000;
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 30px
+}
+.company-name{
+  font-size: 18px;
+}
+/*Жирный шрифт на макете, который заголовком не является*/
+.main-point{
+  font-size: 55px;
+  line-height: 55px;
+}
+.about-us{
+  font-size: 44px;
+  line-height: 44px;
+}
+.percent-number, .percent{
+  font-size: 45px;
+  line-height: 10px
 }
