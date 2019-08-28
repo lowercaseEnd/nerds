@@ -1,12 +1,27 @@
-/*Стили для приведения к одному виду*/
+
 body{
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  /*Стили для приведения к одному виду*/
+  margin: 0px;
+  padding: 0px;
+/*Настройка шрифтов как на макете*/
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  font-weight: 400;
+
+  background-color: #fff;
 }
 
-/*Подключение шрифтов как на макете*/
-body {
-  font-family: 'Roboto', sans-serif;
+
+.main-header{
+  background-color: #eeeeee;
+
+ 
+}
+.main-nav, .cart{
+  line-height: 30px;
+}
+a{
+  text-decoration: none;
 }
