@@ -47,3 +47,11 @@ a{
 .write-us-button{
   width: 180px;
 }
+
+/*Ссылки в разных состояниях*/
+a:hover{
+  color: #fb565a;
+}
+a:active{
+  color: rgb(0, 0, 0, 0.3);
+}
