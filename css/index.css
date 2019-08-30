@@ -1,74 +1,10 @@
 
-body{
-  /*Стили для приведения к одному виду в разных браузерах*/
-  margin: 0px;
-  padding: 0px;
-/*Настройка шрифтов как на макете*/
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  color: #000;
-  font-weight: 400;
-
-  background-color: #fff;
-}
-
-.visually-hidden {
-	position: absolute !important;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
-}
-
-a{
-  text-decoration: none;
-}
-
-.main-header{
-  background-color: #eeeeee;
-}
-.main-nav, .cart{
-  line-height: 30px;
-}
 .main-point{
   font-size: 55px;
   line-height: 55px;
 }
 
 /*Ссылки в разных состояниях*/
-a:hover{
-  color: #fb565a;
-}
-a:active{
-  color: rgb(0, 0, 0, 0.3);
-}
-a:focus{
-  text-decoration: underline;
-  text-decoration-color: #fb565a;
-}
-/*Кнопки в разных состояниях*/
-.button{
-  font: inherit;
-
-  background-color: #fb565a;
-  color: #fff;
-
-  padding: 5px 15px;
-  margin: 0px;
-  border: 0px;
-
-  text-decoration: none;
-}
-.button:hover{
-  background-color: #e74246;
-}
-.button:focus{
-  background-color: #d7373b;
-  color: rgba(255, 255, 255, 0.3);
-}
 a.button-green{
   background-color: #00ca74;
 }
@@ -90,10 +26,7 @@ a.button-yellow:focus{
   color: rgba(255, 255, 255, 0.3);
 }
 /*Настройка списков*/
-ul{
-  /*Только у одного списка есть точки слева, поэтому отключаем*/
-  list-style-type: none;
-}
+
 .order-list li{
   list-style-type: initial;
   color: #fb565a;
@@ -106,12 +39,6 @@ ul{
 }
 
 /*Заголовки*/
-h2 {
-  color: #000;
-  background-color: #fff;
-  font-size: 24px;
-  line-height: 30px
-}
 .company-name{
   font-size: 18px;
 }

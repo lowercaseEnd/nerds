@@ -1,0 +1,29 @@
+/*Заголовки*/
+h3 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*Ссылки*/
+.next-link{
+    background-color: #eeeeee;
+}
+.page-link{
+    padding: 15px;
+    background-color: #eeeeee;
+    color: #fff;
+}
+.page-link:hover, .next-link:hover{
+    background-color: #dfdfdf; 
+}
+.page-link:active, .next-link:active{
+    background-color: #d5d5d5;
+    border-top-style: initial;
+    border-top-width: 2px;
+    border-top-color: hsla(183, 47, 1, 0.1); 
+}
+.page-link:focus{
+    border-style: initial;
+    border-width: 2px;
+    border-color: #dbdbdb;
+}
