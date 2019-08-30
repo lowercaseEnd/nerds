@@ -27,3 +27,15 @@ h3 {
     border-width: 2px;
     border-color: #dbdbdb;
 }
+.sort-by-link, .asc-desc-link{
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.sort-by-link:hover, .asc-desc-link:hover{
+    color: rgba(0, 0, 0, 0.6);
+}
+.sort-by-link:focus, .asc-desc-link:focus{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
