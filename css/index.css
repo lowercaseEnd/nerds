@@ -110,6 +110,12 @@ a.button-yellow:focus{
 }
 
 /*flex*/
-
-
-/**/
+.main-nav-wrapper{
+  width: 100%;
+}
+.wrapper{
+  width: 1150px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+}
