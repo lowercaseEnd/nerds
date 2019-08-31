@@ -38,6 +38,32 @@ a.button-yellow:focus{
   background-color: #fff;
 }
 
+.nav-list, img{
+  margin: 0;
+  padding: 0;
+}
+.main-nav{
+  padding-top: 49px;
+}
+.nav-list{
+  width: 450px;
+  padding-right: 10px;
+}
+  
+
+.nav-list li{
+  display: inline-block;
+  text-align: center;
+}
+.nav-list a{
+  display: block;
+  padding: 5px 15px;
+}
+.cart a{
+  display: inline-block;
+  padding: 0 15px;
+}
+
 /*Заголовки*/
 .company-name{
   font-size: 18px;
@@ -84,3 +110,6 @@ a.button-yellow:focus{
 }
 
 /*flex*/
+
+
+/**/
