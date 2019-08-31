@@ -34,12 +34,29 @@ body{
   .main-nav, .cart{
     line-height: 30px;
   }
+  .main-nav{
+    padding-top: 49px;
+  }
 
 /*Настройка списков*/
   ul{
     /*Только у одного списка есть точки слева, поэтому отключаем*/
     list-style-type: none;
+    padding-left: 0px;
   }
+  .nav-list li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+}
+.nav-list a{
+  display: block;
+  padding: 5px 22px;
+  color: #000;
+  background-color: #eee;
+}
 
 /*Заголовки*/
   h2 {

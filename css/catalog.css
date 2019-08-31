@@ -50,6 +50,7 @@ h3 {
 .main-nav-wrapper{
     width: 100%;
     margin-bottom: 80px;
+    background-color: #eee;
 }
 .wrapper{
     display: flex;
@@ -57,4 +58,13 @@ h3 {
     padding: 0 10px;
     width: 1150px;
     justify-content: space-between;
+}
+.page-header{
+    padding-bottom: 112px;
+    min-height: 50px;
+}
+
+/*Списки*/
+.nav-list li{
+    display: inline-block;
 }
