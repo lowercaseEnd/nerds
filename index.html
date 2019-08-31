@@ -10,9 +10,11 @@
     </head>
     <body>
         <header class="main-header">
+            <div class="nav-wrapper">
             <a class="index-logo">
                 <img src="img/svg/nerds-logo.svg" alt="nerds-logo">
             </a>
+            
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li>
@@ -28,11 +30,13 @@
                         <a href="contacts.html">КОНТАКТЫ</a>
                     </li>
                 </ul>
-                <div class="cart">
-                    <img src="img/svg/cart-icon.svg" alt="cart">
-                    <a href="cart.html" class="cart-link">КОРЗИНА</a>
-                </div>
+                
             </nav>
+            <div class="cart">
+                <img src="img/svg/cart-icon.svg" alt="cart">
+                <a href="cart.html" class="cart-link">КОРЗИНА</a>
+            </div>
+        </div>
             <ul class="header-news">
                 <li>
                     <p class="header-news-ad">
@@ -45,7 +49,7 @@
                     <a href="#" class="button learn-more">УЗНАТЬ БОЛЬШЕ</a>
                     <img src="img/slide1.png" alt="">
                 </li>
-                <li>
+                <li class="visually-hidden">
                     <p class="header-news-ad">
                         <strong class="main-point">Любим математику как никто другой</strong>
                         Никакого креатива, только математические формулы 
@@ -54,7 +58,7 @@
                     <a href="#" class="button learn-more">УЗНАТЬ БОЛЬШЕ</a>
                     <img src="img/slide2.png" alt="">
                 </li>
-                <li>
+                <li class="visually-hidden">
                     <p class="header-news-ad">
                         <strong class="main-point">Только ночь,
                         только хардкор</strong>
@@ -250,8 +254,8 @@
                 <label for="write-us-message"><strong class="modal-field">Текст письма</strong>:</label>
                 <textarea id="write-us-message" placeholder="В свободной форме:" name="user-message"></textarea>
             </div>
-            <button class="modal button button-send" type="button submit">Отправить</button>
-            <button class="modal button button-close" type="button button-close">Закрыть</button>
+            <button class="modal button button-send" type="submit">Отправить</button>
+            <button class="modal button button-close" type="button">Закрыть</button>
         </form>
     </body>
 </html>
