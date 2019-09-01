@@ -114,8 +114,39 @@ a.button-yellow:focus{
   width: 100%;
 }
 .wrapper{
-  width: 1150px;
-  padding: 0 10px;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
+  justify-content: space-between;
+}
+
+.introduction-links{
+  background-color: #eee;
+  width: 100%;
+}
+.header-news li{
+  display: flex;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: fit-content;
   justify-content: space-around;
+}
+.header-news-ad{
+  width: 380px;
+}
+.headers-wrapper{
+  width: 100%;
+  background-color: #eee; 
+}
+.header-news{
+  width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.header-news-ad{
+  margin: 40px 0;
+}
+.text-wrapper{
+  align-self: center;
 }
