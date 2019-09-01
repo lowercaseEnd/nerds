@@ -50,15 +50,19 @@ h2 {
 }
 
 /*Ссылки в разных состояниях*/
-a:hover{
+.nav-link{
+  color: #000;
+}
+.nav-link:hover{
   color: #fb565a;
 }
-a:active{
-  color: rgb(0, 0, 0, 0.3);
-}
-a:focus{
+.nav-link:focus{
   text-decoration: underline;
   text-decoration-color: #fb565a;
+}
+.nav-link:active{
+  color: rgb(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 /*Кнопки в разных состояниях*/
 .button{
