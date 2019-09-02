@@ -178,3 +178,8 @@ a.button-yellow:focus{
   padding: 0;
   margin: 0 auto;
 }
+.header-slider{
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
