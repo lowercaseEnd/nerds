@@ -172,6 +172,14 @@ a.button-yellow:focus{
   margin: 0;
 }
 
+/*Спонсоры*/
+.sponsors-list{
+  display: flex;
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 /*Слайдер*/
 .header-slider li{
   display: inline-block;

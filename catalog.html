@@ -49,6 +49,7 @@
 
     </header>
     <main class="main-content">
+        <div class="main-wrapper">
         <section class="filter">
             <h2 class="visually-hidden">
                 Фильтр каталога
@@ -100,32 +101,35 @@
                 <button class="button button-filter" type="submit">ПОКАЗАТЬ</button>
             </form>
         </section>
-        <section class="sort-by">
-            <h2 class="sort-by-heading">
-                Отсортировать
-            </h2>
-            <ul class="sort-by-list">
-                <li class="sort-by-price">
-                    <a href="#" class="sort-by-link">По цене</a>
-                </li>
-                <li class="sort-by-type">
-                    <a href="#" class="sort-by-link">По типу</a>
-                </li>
-                <li class="sort-by-name">
-                    <a href="#" class="sort-by-link">По названию</a>
-                </li>
-            </ul>
-            <form action="" method="POST" class="asc-desc">
-                <ul class="asc-desc-list">
-                    <li>
-                        <a href="#" class="asc-desc-link">По возрастанию</a>
+        <div class="section-wrapper">
+            <section class="sort-by">
+                <h2 class="sort-by-heading">
+                    Отсортировать
+                </h2>
+                <ul class="sort-by-list">
+                    <li class="sort-by-price">
+                        <a href="#" class="sort-by-link">По цене</a>
                     </li>
-                    <li>
-                        <a href="#" class="asc-desc-link">По убыванию</a>
+                    <li class="sort-by-type">
+                        <a href="#" class="sort-by-link">По типу</a>
+                    </li>
+                    <li class="sort-by-name">
+                        <a href="#" class="sort-by-link">По названию</a>
                     </li>
                 </ul>
-            </form>
-        </section>
+                <form action="" method="POST" class="asc-desc">
+                    <ul class="asc-desc-list">
+                        <li>
+                            <a href="#" class="asc-desc-link">По возрастанию</a>
+                        </li>
+                        <li>
+                            <a href="#" class="asc-desc-link">По убыванию</a>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        
+        
         <section class="catalog">
             <h2 class="visually-hidden">
                 Каталог товаров
@@ -201,6 +205,8 @@
                 </li>
             </ul>
         </section>
+    </div>
+</div>
     </main>
     <footer class="main-footer">
 

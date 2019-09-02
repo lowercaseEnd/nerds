@@ -84,3 +84,31 @@ h3 {
     flex-wrap: wrap;
 }
 
+
+/*Main*/
+.main-content{
+    width: 100%;
+}
+.main-wrapper{
+    display: flex;
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.sort-by{
+    width: 760px;
+}
+
+/*Filter + catalog*/
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    width: 360px;
+    padding: 0 20px;
+}
+.catalog{
+    width: 760px;
+    padding: 0 20px;
+}
