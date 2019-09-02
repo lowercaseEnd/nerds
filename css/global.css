@@ -12,7 +12,7 @@ body{
 
   background-color: #fff;
 }
-
+/*Скрыть элементы, которые есть в коде, но нет на макете*/
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -22,7 +22,7 @@ body{
   width: 1px !important; 
   overflow: hidden;
 }
-
+/*Убрать подчёркивания у ссылок*/
 a{
   text-decoration: none;
 }
@@ -34,7 +34,19 @@ a{
 .main-nav, .cart{
   line-height: 30px;
 }
-
+/*Списки в строку*/
+.nav-list li{
+  display: inline-block;
+  text-align: center;
+}
+.nav-list a{
+  display: inline-block;
+  padding: 5px 15px;
+}
+.cart a{
+  display: inline-block;
+  padding: 0 15px;
+}
 /*Настройка списков*/
 ul{
   /*Только у одного списка есть точки слева, поэтому отключаем*/
@@ -49,7 +61,7 @@ h2 {
   line-height: 30px
 }
 
-/*Ссылки в разных состояниях*/
+/*Ссылки в навигации в разных состояниях*/
 .nav-link{
   color: #000;
 }
@@ -64,7 +76,7 @@ h2 {
   color: rgb(0, 0, 0, 0.3);
   text-decoration: none;
 }
-/*Кнопки в разных состояниях*/
+/*Кнопки и ссылки в виде кнопок в разных состояниях*/
 .button{
   font: inherit;
   text-align: center;
@@ -77,7 +89,7 @@ h2 {
 
   padding: 5px 15px;
   margin: 0;
-  
+
   border-width: 3px 0 0 0;
   border-color: #fb565a;
   border-style: solid;
@@ -89,6 +101,7 @@ h2 {
 }
 .button:hover{
   background-color: #e74246;
+  border-color: #e74246;
 }
 .button:focus{
   background-color: #d7373b;
@@ -98,5 +111,3 @@ h2 {
   border-top-width: 3px;
   border-top-color: rgb(0, 0, 0, 0.1);
 }
-  /*Flex для навигации*/
-  /* */

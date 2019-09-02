@@ -11,6 +11,7 @@ a.button-yellow{
 }
 a.button-green:hover{
   background-color: #00bc6c;
+  border-color: #00bc6c;
 }
 a.button-green:focus{
   background-color: #00aa62;
@@ -18,13 +19,14 @@ a.button-green:focus{
 }
 a.button-yellow:hover{
   background-color: #eab534;
+  border-color: #eab534;
 }
 a.button-yellow:focus{
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
 }
-/*Настройка списков*/
 
+/*Настройка списков*/
 .order-list li{
   list-style-type: initial;
   color: #fb565a;
@@ -34,45 +36,23 @@ a.button-yellow:focus{
   line-height: 18px;
   color: #000;
   background-color: #fff;
+}  
+/*Списки в строку*/
+.percents-list li{
+  display: inline-block;
 }
 
-.nav-list, img{
-  margin: 0;
-  padding: 0;
-}
-.main-nav{
-  padding-top: 49px;
-}
-.nav-list{
-  width: 450px;
-  padding-right: 10px;
-}
-  
-
-.nav-list li{
-  display: inline-block;
-  text-align: center;
-}
-.nav-list a{
-  display: inline-block;
-  padding: 5px 15px;
-}
-.cart a{
-  display: inline-block;
-  padding: 0 15px;
-}
-
+/*Шрифты, которые отличаются от наследуемых*/
 /*Заголовки*/
-.company-name{
+.company-nameб .sort-by-heading{
   font-size: 18px;
-}
-.sort-by-heading{
-  font-size: 18px;
-  line-height: 18px;
 }
 .modal-heading{
   font-size: 45px;
   line-height: 45px
+}
+.discount-offer{
+  line-height: 22px;
 }
 /*Жирный шрифт на макете, который заголовком не является*/
 .main-point{
@@ -98,16 +78,16 @@ a.button-yellow:focus{
   font-size: 30px;
   line-height: 30px;
 }
-/*Шрифты на странице, которые отличаются от наследуемых в body*/
-.percent-about, .address-and-phone, .button, :placeholder-shown{
-  font:inherit;
-  line-height: 18px;
-}
-.discount-offer{
-  line-height: 22px;
+
+
+.headers-wrapper{
+  width: 100%;
+  background-color: #eee; 
 }
 
+
 /*flex*/
+/*Основная навигация*/
 .main-nav-wrapper{
   width: 100%;
 }
@@ -118,7 +98,19 @@ a.button-yellow:focus{
   display: flex;
   justify-content: space-between;
 }
+.nav-list{
+  width: 450px;
+  padding-right: 10px;
+}
+.nav-list, img{
+  margin: 0;
+  padding: 0;
+}
+.main-nav{
+  padding-top: 49px;
+}
 
+/*Слайды в шапке*/
 .introduction-links{
   background-color: #eee;
   width: 100%;
@@ -129,10 +121,6 @@ a.button-yellow:focus{
   margin: 0 auto;
   height: fit-content;
   justify-content: space-around;
-}
-.headers-wrapper{
-  width: 100%;
-  background-color: #eee; 
 }
 .header-news{
   width: 1160px;
@@ -147,7 +135,8 @@ a.button-yellow:focus{
   width: 380px;
 }
 
-.services-wrapper{
+/*Раздел section с услугами*/
+.main-services{
   width: 100%;
 }
 .services-list{
@@ -161,7 +150,27 @@ a.button-yellow:focus{
   width: 360px;
   padding: 0 20px;
 }
-
+/*Раздел section с описанием компании*/
+.about-company{
+  width: 100%;
+}
+.section-wrapper{
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.left-wrapper{
+  width: 760px;
+  padding: 0 20px;
+  margin: 0;
+}
+.right-wrapper{
+  width: 360px;
+  padding: 0 20px;
+  margin: 0;
+}
 
 /*Слайдер*/
 .header-slider li{
