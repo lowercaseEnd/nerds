@@ -147,6 +147,21 @@ a.button-yellow:focus{
   width: 380px;
 }
 
+.services-wrapper{
+  width: 100%;
+}
+.services-list{
+  display: flex;
+  justify-content: space-around;
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.services-list li{
+  width: 360px;
+  padding: 0 20px;
+}
+
 
 /*Слайдер*/
 .header-slider li{
