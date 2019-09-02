@@ -14,13 +14,13 @@ body{
 }
 
 .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px);
-    padding:0 !important;
-    border:0 !important;
-    height: 1px !important; 
-    width: 1px !important; 
-    overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
 }
 
 a{
@@ -67,13 +67,23 @@ h2 {
 /*Кнопки в разных состояниях*/
 .button{
   font: inherit;
+  text-align: center;
+
+  display: inline-block;
+  box-sizing: border-box;
 
   background-color: #fb565a;
   color: #fff;
 
   padding: 5px 15px;
-  margin: 0px;
-  border: 0px;
+  margin: 0;
+  
+  border-width: 3px 0 0 0;
+  border-color: #fb565a;
+  border-style: solid;
+
+  width: 240px;
+  min-height: 50px;
 
   text-decoration: none;
 }
@@ -83,6 +93,10 @@ h2 {
 .button:focus{
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+  
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: rgb(0, 0, 0, 0.1);
 }
   /*Flex для навигации*/
   /* */
