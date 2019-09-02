@@ -43,17 +43,6 @@ a.button-yellow:focus{
 }
 
 /*Шрифты, которые отличаются от наследуемых*/
-/*Заголовки*/
-.company-nameб .sort-by-heading{
-  font-size: 18px;
-}
-.modal-heading{
-  font-size: 45px;
-  line-height: 45px
-}
-.discount-offer{
-  line-height: 22px;
-}
 /*Жирный шрифт на макете, который заголовком не является*/
 .main-point{
   font-size: 55px;
@@ -67,18 +56,6 @@ a.button-yellow:focus{
   font-size: 45px;
   line-height: 10px
 }
-.appeal{
-  font-size: 36px;
-  line-height: 36px
-}
-.modal-field{
-  line-height: 18px;
-}
-.filter-name{
-  font-size: 30px;
-  line-height: 30px;
-}
-
 
 .headers-wrapper{
   width: 100%;

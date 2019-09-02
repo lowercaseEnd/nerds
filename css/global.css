@@ -111,3 +111,25 @@ h2 {
   border-top-width: 3px;
   border-top-color: rgb(0, 0, 0, 0.1);
 }
+
+/*Шрифты, которые отличаются от наследуемых*/
+/*Заголовки*/
+.discount-offer{
+  line-height: 22px;
+}
+.company-name, .sort-by-heading{
+  font-size: 18px;
+}
+.modal-heading{
+  font-size: 45px;
+  line-height: 45px
+}
+/*Жирный шрифт на макете, который заголовком не является*/
+.appeal{
+  font-size: 36px;
+  line-height: 36px
+}
+
+.modal-field{
+  line-height: 18px;
+}

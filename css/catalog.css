@@ -4,6 +4,13 @@ h3 {
     line-height: 30px;
 }
 
+/*Шрифты, которые отличаются от наследуемых*/
+/*Жирный шрифт на макете, который заголовком не является*/
+.filter-name{
+    font-size: 30px;
+    line-height: 30px;
+  }
+
 /*Ссылки*/
 .next-link{
     background-color: #eeeeee;
