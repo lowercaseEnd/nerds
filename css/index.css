@@ -57,11 +57,6 @@ a.button-yellow:focus{
   line-height: 10px
 }
 
-.headers-wrapper{
-  width: 100%;
-  background-color: #eee; 
-}
-
 
 /*flex*/
 /*Основная навигация*/
@@ -69,16 +64,14 @@ a.button-yellow:focus{
   width: 100%;
 }
 .wrapper{
+  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
 }
-.nav-list{
-  width: 450px;
-  padding-right: 10px;
-}
+
 .nav-list, img{
   margin: 0;
   padding: 0;
@@ -94,14 +87,15 @@ a.button-yellow:focus{
 }
 .header-news li{
   display: flex;
+  box-sizing: border-box;
+  width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
   height: fit-content;
   justify-content: space-around;
 }
 .header-news{
-  width: 1160px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .header-news-ad{

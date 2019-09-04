@@ -55,10 +55,6 @@ h3 {
 .main-nav{
     padding-top: 49px;
 }
-.nav-list{
-    width: 450px;
-    padding-right: 10px;
-}
 /*Flex*/
 /*Навигация*/
 .main-nav{
@@ -106,7 +102,7 @@ h3 {
     width: 760px;
 }
 
-/*Filter + catalog*/
+/*Sort + catalog*/
 .section-wrapper{
     display: flex;
     flex-direction: column;
@@ -118,4 +114,5 @@ h3 {
 .catalog{
     width: 760px;
     padding: 0 20px;
+    align-content: space-between;
 }

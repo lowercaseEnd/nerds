@@ -1,59 +1,82 @@
 /*Здесь описаны правила, которые применимы для всех страниц*/
-body{
+
+body {
   /*Стили для приведения к одному виду в разных браузерах*/
   margin: 0px;
   padding: 0px;
-/*Настройка шрифтов как на макете*/
+  /*Настройка шрифтов как на макете*/
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #000;
   font-weight: 400;
-
   background-color: #fff;
 }
+
+
+img {
+  width: 100%;
+  height: auto;
+}
 /*Скрыть элементы, которые есть в коде, но нет на макете*/
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
+
 /*Убрать подчёркивания у ссылок*/
-a{
+
+a {
   text-decoration: none;
 }
 
 /*Шапка сайта*/
-.main-header{
+
+.main-header {
   background-color: #eeeeee;
 }
-.main-nav, .cart{
+
+.main-nav, .cart {
   line-height: 30px;
 }
+
 /*Списки в строку*/
-.nav-list li{
-  display: inline-block;
+.nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 0 20px;
+}
+.nav-list li {
+  padding: 0 15px;
   text-align: center;
 }
-.nav-list a{
+
+.nav-list a {
   display: inline-block;
   padding: 5px 15px;
 }
-.cart a{
+
+.cart a {
   display: inline-block;
   padding: 0 15px;
 }
+
 /*Настройка списков*/
-ul{
+
+ul {
   /*Только у одного списка есть точки слева, поэтому отключаем*/
   list-style-type: none;
 }
 
 /*Заголовки*/
+
 h2 {
   color: #000;
   background-color: #fff;
@@ -62,74 +85,89 @@ h2 {
 }
 
 /*Ссылки в навигации в разных состояниях*/
-.nav-link{
+
+.nav-link {
   color: #000;
 }
-.nav-link:hover{
+
+.nav-link:hover {
   color: #fb565a;
 }
-.nav-link:focus{
+
+.nav-link:focus {
   text-decoration: underline;
   text-decoration-color: #fb565a;
 }
-.nav-link:active{
+
+.nav-link:active {
   color: rgb(0, 0, 0, 0.3);
   text-decoration: none;
 }
+
 /*Кнопки и ссылки в виде кнопок в разных состояниях*/
-.button{
+
+.button {
   font: inherit;
   text-align: center;
-
   display: inline-block;
   box-sizing: border-box;
-
   background-color: #fb565a;
   color: #fff;
-
   padding: 5px 15px;
   margin: 0;
-
   border-width: 3px 0 0 0;
   border-color: #fb565a;
   border-style: solid;
-
   width: 240px;
   min-height: 50px;
-
   text-decoration: none;
 }
-.button:hover{
+
+.button:hover {
   background-color: #e74246;
   border-color: #e74246;
 }
-.button:focus{
+
+.button:focus {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
-  
   border-top-style: solid;
   border-top-width: 3px;
   border-top-color: rgb(0, 0, 0, 0.1);
 }
 
 /*Шрифты, которые отличаются от наследуемых*/
+
 /*Заголовки*/
-.discount-offer{
+
+.discount-offer {
   line-height: 22px;
 }
-.company-name, .sort-by-heading{
+
+.company-name, .sort-by-heading {
   font-size: 18px;
 }
-.modal-heading{
+
+.modal-heading {
   font-size: 45px;
   line-height: 45px
 }
+
 /*Жирный шрифт на макете, который заголовком не является*/
-.appeal{
+
+.appeal {
   font-size: 36px;
   line-height: 36px
 }
 
-.modal-field{
+.modal-field {
   line-height: 18px;
+}
+
+/*Напишите нам*/
+
+.address-form {
+  background-color: #fff;
+  width: 300px;
+  padding: 45px 50px;
 }
