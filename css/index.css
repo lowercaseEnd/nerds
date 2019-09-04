@@ -72,10 +72,6 @@ a.button-yellow:focus{
   justify-content: space-between;
 }
 
-.nav-list, img{
-  margin: 0;
-  padding: 0;
-}
 .main-nav{
   padding-top: 49px;
 }
@@ -112,6 +108,7 @@ a.button-yellow:focus{
 }
 .services-list{
   display: flex;
+  box-sizing: border-box;
   justify-content: space-around;
   width: 1160px;
   padding: 0 20px;
@@ -127,6 +124,7 @@ a.button-yellow:focus{
 }
 .section-wrapper{
   display: flex;
+  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -146,6 +144,7 @@ a.button-yellow:focus{
 /*Спонсоры*/
 .sponsors-list{
   display: flex;
+  box-sizing: border-box;
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;

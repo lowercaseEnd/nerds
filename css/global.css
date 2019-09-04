@@ -50,24 +50,36 @@ a {
 .nav-list{
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   width: 600px;
   padding: 0 20px;
 }
 .nav-list li {
-  padding: 0 15px;
+  padding: 0 25px;
   text-align: center;
+  
+  vertical-align: middle;
 }
-
-.nav-list a {
-  display: inline-block;
-  padding: 5px 15px;
+.cart{
+  padding-left: 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
+.cart::before{
+  content: "";
 
-.cart a {
-  display: inline-block;
-  padding: 0 15px;
+  width: 16px;
+  height: 18px;
+
+  position: absolute;
+  top: 77px;
+  right: 205px;
+
+  background-image: url("../img/svg/cart-icon.svg");
+  background-repeat: no-repeat;
 }
-
 /*Настройка списков*/
 
 ul {
