@@ -164,3 +164,50 @@ a.button-yellow:focus{
 
 
 /*Background images*/
+
+.service{
+  position: relative;
+  padding-top: 200px;
+}
+.service-first::before{
+  content: "";
+
+  width: 300px;
+  height: 146px;
+
+  position: absolute;
+
+  top: 15px;
+
+  background-image: url("../img/illustration-1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+.service-second::before{
+  content: "";
+
+  width: 300px;
+  height: 146px;
+
+  position: absolute;
+
+  top: 15px;
+
+  background-image: url("../img/illustration-2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+.service-third::before{
+  content: "";
+
+  width: 300px;
+  height: 146px;
+
+  position: absolute;
+
+  top: 15px;
+
+  background-image: url("../img/illustration-3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
