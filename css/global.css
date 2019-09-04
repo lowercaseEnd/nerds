@@ -61,24 +61,29 @@ a {
   vertical-align: middle;
 }
 .cart{
+  width: 160px;
   padding-left: 40px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.cart::before{
+.cart-link{
+  position: relative;
+}
+.cart-link::before{
   content: "";
 
   width: 16px;
   height: 18px;
 
   position: absolute;
-  top: 77px;
-  right: 205px;
+  top: 5px;
+  right: 95px;
 
   background-image: url("../img/svg/cart-icon.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
 }
 /*Настройка списков*/
 
