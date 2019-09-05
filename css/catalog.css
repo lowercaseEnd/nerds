@@ -113,3 +113,19 @@ h3 {
     padding: 0 20px;
     align-content: space-between;
 }
+/*Sort*/
+.sort-by{
+    display: flex;
+    justify-content: space-between;
+    width: 760px;
+}
+.sort-by-list{
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+.asc-desc-list{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}

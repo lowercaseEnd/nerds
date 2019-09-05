@@ -1,25 +1,31 @@
-/*Здесь описаны правила, которые применимы для всех страниц*/
+/*Rules that are applicable to every page*/
 
 body {
-  /*Стили для приведения к одному виду в разных браузерах*/
   margin: 0px;
   padding: 0px;
-  /*Настройка шрифтов как на макете*/
+
   font-family: 'Roboto', Arial, sans-serif;
+
   font-size: 16px;
-  line-height: 18px;
-  color: #000;
   font-weight: 400;
+  line-height: 18px;
+
+  color: #000;  
   background-color: #fff;
+
+  box-sizing: border-box;
 }
 
+*, *::after, *::before{
+  box-sizing: inherit;
+}
 
 img {
   width: 100%;
   height: auto;
 }
-/*Скрыть элементы, которые есть в коде, но нет на макете*/
 
+/*Hide elements*/
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
@@ -30,14 +36,12 @@ img {
   overflow: hidden;
 }
 
-/*Убрать подчёркивания у ссылок*/
-
+/*Disable underline*/
 a {
   text-decoration: none;
 }
 
-/*Шапка сайта*/
-
+/*Header*/
 .main-header {
   background-color: #eeeeee;
 }
@@ -46,7 +50,7 @@ a {
   line-height: 30px;
 }
 
-/*Списки в строку*/
+/*List in line*/
 .nav-list{
   display: flex;
   flex-wrap: wrap;
@@ -60,10 +64,11 @@ a {
   
   vertical-align: middle;
 }
+/*Background image*/
+/*Cart*/
 .cart{
   width: 160px;
   padding-left: 40px;
-  box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -85,15 +90,13 @@ a {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
-/*Настройка списков*/
 
+/*List styles*/
 ul {
-  /*Только у одного списка есть точки слева, поэтому отключаем*/
   list-style-type: none;
 }
 
-/*Заголовки*/
-
+/*Headings*/
 h2 {
   color: #000;
   background-color: #fff;
@@ -101,7 +104,7 @@ h2 {
   line-height: 30px
 }
 
-/*Ссылки в навигации в разных состояниях*/
+/*Links in different states*/
 
 .nav-link {
   color: #000;
@@ -121,13 +124,12 @@ h2 {
   text-decoration: none;
 }
 
-/*Кнопки и ссылки в виде кнопок в разных состояниях*/
+/*Different states of buttons and links that looks like buttons*/
 
 .button {
   font: inherit;
   text-align: center;
   display: inline-block;
-  box-sizing: border-box;
   background-color: #fb565a;
   color: #fff;
   padding: 5px 15px;
@@ -153,9 +155,9 @@ h2 {
   border-top-color: rgb(0, 0, 0, 0.1);
 }
 
-/*Шрифты, которые отличаются от наследуемых*/
+/*Fonts that differ from inherited ones*/
 
-/*Заголовки*/
+/*In headings*/
 
 .discount-offer {
   line-height: 22px;
@@ -170,7 +172,7 @@ h2 {
   line-height: 45px
 }
 
-/*Жирный шрифт на макете, который заголовком не является*/
+/*Bold fonts that aren't heading*/
 
 .appeal {
   font-size: 36px;
@@ -181,7 +183,7 @@ h2 {
   line-height: 18px;
 }
 
-/*Напишите нам*/
+/*Write us modal*/
 
 .address-form {
   background-color: #fff;

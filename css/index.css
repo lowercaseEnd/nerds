@@ -64,7 +64,6 @@ a.button-yellow:focus{
   width: 100%;
 }
 .wrapper{
-  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -83,7 +82,6 @@ a.button-yellow:focus{
 }
 .header-news li{
   display: flex;
-  box-sizing: border-box;
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
@@ -108,7 +106,6 @@ a.button-yellow:focus{
 }
 .services-list{
   display: flex;
-  box-sizing: border-box;
   justify-content: space-around;
   width: 1160px;
   padding: 0 20px;
@@ -124,7 +121,6 @@ a.button-yellow:focus{
 }
 .section-wrapper{
   display: flex;
-  box-sizing: border-box;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -144,7 +140,6 @@ a.button-yellow:focus{
 /*Спонсоры*/
 .sponsors-list{
   display: flex;
-  box-sizing: border-box;
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
@@ -164,7 +159,10 @@ a.button-yellow:focus{
 
 
 /*Background images*/
-
+/*For section with class: main-services*/
+.main-services{
+  padding-bottom: 80px;
+}
 .service{
   position: relative;
   padding-top: 200px;
@@ -210,4 +208,9 @@ a.button-yellow:focus{
   background-image: url("../img/illustration-3.jpg");
   background-repeat: no-repeat;
   background-size: contain; 
+}
+
+.percents-list li{
+  display: inline-block;
+  width: 100px;
 }
