@@ -1,4 +1,4 @@
-/*Ссылки в разных состояниях*/
+/*Links in different states*/
 a.button-green{
   border-color: #00ca74;
   border-style: solid;
@@ -26,10 +26,11 @@ a.button-yellow:focus{
   color: rgba(255, 255, 255, 0.3);
 }
 
-/*Настройка списков*/
+/*Lists*/
 .order-list li{
   list-style-type: initial;
   color: #fb565a;
+  padding: 5px 0;
 }
 .order-text{
   font-size: 16px;
@@ -37,13 +38,25 @@ a.button-yellow:focus{
   color: #000;
   background-color: #fff;
 }  
-/*Списки в строку*/
+/*Lists in line*/
+.percents-list{
+  padding: 0;
+}
+.percent{
+  vertical-align: top;
+  font-size: 22px;
+  font-weight: 700;
+}
 .percents-list li{
   display: inline-block;
+  width: 100px;
 }
 
-/*Шрифты, которые отличаются от наследуемых*/
-/*Жирный шрифт на макете, который заголовком не является*/
+/*Fonts that differ from inherited*/
+.percent-about{
+  color: #283136;
+}
+/*Bold fonts that aren't headings*/
 .main-point{
   font-size: 55px;
   line-height: 55px;
@@ -51,13 +64,31 @@ a.button-yellow:focus{
 .about-us{
   font-size: 44px;
   line-height: 44px;
+
+  padding-bottom: 35px;
+  display: inline-block;
 }
-.percent-number, .percent{
+.percent-number{
   font-size: 45px;
   line-height: 10px
 }
+.since{
+  font-weight: 700;
+  font-size: 16px;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  line-height: 24px;
+}
 
 
+.ad{
+  padding-bottom: 35px;
+}
+.we-do{
+  display: inline-block;
+  padding-bottom: 35px;
+}
 /*flex*/
 /*Основная навигация*/
 .main-nav-wrapper{
@@ -118,6 +149,7 @@ a.button-yellow:focus{
 /*Раздел section с описанием компании*/
 .about-company{
   width: 100%;
+  padding-top: 80px;
 }
 .section-wrapper{
   display: flex;
@@ -210,7 +242,23 @@ a.button-yellow:focus{
   background-size: contain; 
 }
 
-.percents-list li{
-  display: inline-block;
-  width: 100px;
+
+/*Opacity on sponsors images*/
+.sponsors-list img{
+  opacity: 0.2;
+}
+.sponsors-list img:hover{
+  opacity: 1;
+}
+.sponsors-list img{
+  opacity: 0.1;
+}
+
+.map-wrapper{
+  position: relative;
+}
+.address-form{
+  position: absolute;
+  top: 54px;
+  left: 80px;
 }
