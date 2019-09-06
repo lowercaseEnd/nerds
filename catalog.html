@@ -206,48 +206,52 @@
         </div>
     </main>
     <footer class="main-footer">
+        <div class="map-wrapper">
+            <img src="img/map.jpg" alt="191186, Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8">
+            <div class="address-form">
+                <h2 class="company-name">
+                    NЁRDS DESIGN STUDIO
+                </h2>
+                <p class="address-and-phone">
+                    191186, Санкт-Петербург,<br>
+                    ул. Б. Конюшенная, д. 19/8<br>
+                    <br>
+                    тел. +7 (812) 275-75-75
+                </p>
+                <button class="button write-us-button" type="button">Напишите нам</button>
+            </div>
 
-        <img src="img/map.jpg" alt="191186, Санкт-Петербург, 
-                ул. Б. Конюшенная, д. 19/8">
-        <div class="address-form">
-            <h2>
-                NЁRDS DESIGN STUDIO
-            </h2>
-            <p class="address-and-phone">
-                191186, Санкт-Петербург,<br>
-                ул. Б. Конюшенная, д. 19/8<br>
-                <br>
-                тел. +7 (812) 275-75-75
-            </p>
-            <button class="button" type="button">Напишите нам</button>
         </div>
 
 
-        <ul class="soc-media">
-            <li>
-                <a href="#" class="social-link">
-                    <img src="img/svg/vk-icon.svg" alt="vk.com">
-                </a>
-            </li>
-            <li>
-                <a href="#" class="social-link">
-                    <img src="img/svg/fb-icon.svg" alt="facebook.com">
-                </a>
-            </li>
-            <li>
-                <a href="#" class="social-link">
-                    <img src="img/svg/insta-icon.svg" alt="instagram.com">
-                </a>
-            </li>
-        </ul>
-        <div class="footer-text">
-            <strong class="appeal">Давайте дружить, это выгодно!</strong>
-            <p class="discount-offer"> Скидка 10% для друзей из социальных сетей.
-            </p>
+        <div class="footer-info">
+            <ul class="soc-media">
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="img/svg/vk-icon.svg" width="40" height="40" alt="vk.com">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="img/svg/fb-icon.svg" width="40" height="40" alt="facebook.com">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-link">
+                        <img src="img/svg/insta-icon.svg" width="40" height="40" alt="instagram.com">
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-text">
+                <strong class="appeal">Давайте дружить, это выгодно!</strong>
+                <p class="discount-offer">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </div>
     </footer>
     <form method="POST" action="" class="write-us modal">
-            <legend><strong class="modal-heading">Напишите нам</strong></legend>
+        <legend><strong class="modal-heading">Напишите нам</strong></legend>
+        <div class="top-forms">
             <div class="name-form">
                 <label for="write-us-name"><strong class="modal-field">Ваше имя:</strong></label>
                 <input id="write-us-name" type="text" placeholder="Имя Фамилия" name="user-name">
@@ -256,13 +260,14 @@
                 <label for="write-us-email"><strong class="modal-field">Ваш email:</strong></label>
                 <input id="write-us-email" type="email" placeholder="your@email.com" name="user-email">
             </div>
-            <div class="message-form">
-                <label for="write-us-message"><strong class="modal-field">Текст письма</strong>:</label>
-                <textarea id="write-us-message" placeholder="В свободной форме:" name="user-message"></textarea>
-            </div>
-            <button class="modal button button-send" type="submit">Отправить</button>
-            <button class="modal button button-close" type="button">Закрыть</button>
-        </form>
+        </div>
+        <div class="message-form">
+            <label for="write-us-message"><strong class="modal-field">Текст письма</strong>:</label>
+            <textarea id="write-us-message" placeholder="В свободной форме:" name="user-message"></textarea>
+        </div>
+        <button class="modal button button-send" type="submit">Отправить</button>
+        <button class="modal button button-close" type="button">Закрыть</button>
+    </form>
 </body>
 
 </html>

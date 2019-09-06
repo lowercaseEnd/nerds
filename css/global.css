@@ -186,7 +186,7 @@ h2 {
   line-height: 18px;
 }
 
-/*Write us modal*/
+/*Address and form*/
 
 .address-form {
   background-color: #fff;
@@ -203,6 +203,9 @@ h2 {
   left: 80px;
 }
 
+.map-wrapper{
+  position: relative;
+}
 /*Social links*/
 .social-link img{
   background-color: #e1e1e1;
@@ -232,21 +235,21 @@ h2 {
   width: 1160px;
   padding: 70px 0;
 }
-/* .footer-info{
-  display: flex;
-  width: 1160px;
-  padding: 70px 0;
-  margin: 0 auto;
-  flex-wrap: nowrap;
-  align-items: center;
-} */
-/* .footer-info{
-  width: 100%;
-  padding: 70px 0;
-  position: relative;
+
+/*Write us modal*/
+.write-us {
+  width: 960px;
+  padding: 30px 100px;
+
+  background-color: #fff;
 }
-.footer-text{
-  position: absolute;
-  right: 400px;
-  top: 80px;
-} */
+.modal-heading{
+  display: inline-block;
+  padding-bottom: 50px;
+}
+.top-forms{
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
