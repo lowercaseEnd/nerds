@@ -4,9 +4,28 @@ h3 {
     line-height: 30px;
 }
 
+.main-content{
+    padding-top: 30px;
+}
+.filter-form{
+    padding-top: 30px;
+}
+.filter-name{
+    display: inline-block;
+    padding-bottom: 30px;
+}
+.price-input{
+    padding-bottom: 15px;
+}
+.price-form{
+    padding-bottom: 30px;
+}
+.flex-form{
+    padding-bottom: 40px;
+}
 /*Шрифты, которые отличаются от наследуемых*/
 /*Жирный шрифт на макете, который заголовком не является*/
-.filter-name{
+.filter-name, .sort-by-heading{
     font-size: 30px;
     line-height: 30px;
   }
