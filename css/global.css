@@ -194,7 +194,13 @@ h2 {
   padding: 45px 50px;
 }
 .write-us-button{
-  width: 220px;
+  width: 200px;
+}
+
+.address-form{
+  position: absolute;
+  top: 40px;
+  left: 80px;
 }
 
 /*Social links*/
@@ -207,3 +213,40 @@ h2 {
 .social-link{
   padding: 30px;
 }
+.soc-media{
+  display: flex;
+  width: 360px;
+  padding: 0 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.footer-text{
+  display: flex;
+  justify-content: center;
+  width: 560px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.footer-info{
+  display: flex;
+  width: 1160px;
+  padding: 70px 0;
+}
+/* .footer-info{
+  display: flex;
+  width: 1160px;
+  padding: 70px 0;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+} */
+/* .footer-info{
+  width: 100%;
+  padding: 70px 0;
+  position: relative;
+}
+.footer-text{
+  position: absolute;
+  right: 400px;
+  top: 80px;
+} */

@@ -277,8 +277,3 @@ a.button-yellow:focus{
 .map-wrapper{
   position: relative;
 }
-.address-form{
-  position: absolute;
-  top: 54px;
-  left: 80px;
-}
