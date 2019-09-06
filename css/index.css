@@ -58,8 +58,8 @@ a.button-yellow:focus{
 }
 /*Bold fonts that aren't headings*/
 .main-point{
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 40px;
+  line-height: 50px;
 }
 .about-us{
   font-size: 44px;
@@ -129,6 +129,26 @@ a.button-yellow:focus{
 .text-wrapper{
   align-self: center;
   width: 380px;
+}
+
+/*Images size of slides in the header*/
+.first-slide{
+  width: 380px;
+}
+.first-slide img{
+  width: 698px;
+}
+.second-slide{
+  width: 520px;
+}
+.second-slide img{
+  width: 640px;
+}
+.third-slide{
+  width: 412px;
+}
+.third-slide img{
+  width: 700px;
 }
 
 /*Раздел section с услугами*/

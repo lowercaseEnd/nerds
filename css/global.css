@@ -132,13 +132,16 @@ h2 {
   display: inline-block;
   background-color: #fb565a;
   color: #fff;
-  padding: 5px 15px;
+  padding: 15px 15px;
   margin: 0;
+  width: 240px;
+  height: 50px;
+
   border-width: 3px 0 0 0;
   border-color: #fb565a;
   border-style: solid;
-  width: 240px;
-  min-height: 50px;
+
+  
   text-decoration: none;
 }
 
@@ -192,4 +195,15 @@ h2 {
 }
 .write-us-button{
   width: 220px;
+}
+
+/*Social links*/
+.social-link img{
+  background-color: #e1e1e1;
+  width: 60px;
+  height: 60px;
+  
+}
+.social-link{
+  padding: 30px;
 }
