@@ -54,9 +54,25 @@
                 <form method="POST" action="" class="filter-form">
                     <fieldset class="price-form">
                         <legend><strong class="filter-name">СТОИМОСТЬ:</strong></legend>
-                        <input type="range" name="price" class="price-input">
-                        <p>От <span class="price-form">0</span> До <span class="price-form">15 000</span></p>
-                    </fieldset>
+                        <div class="range-filter">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div class="bar">
+                                        
+                                    </div>
+                                </div>
+                                <div class="toggle toggle-min">
+                
+                                </div>
+                                <div class="toggle toggle-max">
+                                    
+                                </div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="min-price">От <input name="min-price" type="text" value="0"></label>
+                                <label class="max-price">До <input name="max-price" type="text" value="15000"></label>
+                            </div>
+                        </div>
                     <fieldset class="flex-form">
                         <legend><strong class="filter-name">СЕТКА:</strong></legend>
                         <div class="flex-adaptive">

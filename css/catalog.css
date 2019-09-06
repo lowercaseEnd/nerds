@@ -148,3 +148,103 @@ h3 {
     justify-content: space-between;
     width: 60px;
 }
+
+/*Double range filter*/
+.price-form{
+    padding: 0;
+    margin: 0;
+  
+    border: none;
+  }
+  
+  .range-filter{
+    width: 260px;
+    padding-top: 49px;
+  }
+  
+  .filter-name{
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .range-controls{
+    position: relative;
+    height: 78px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+  
+    background-color: #f1f1f1;
+  
+    border-radius: 5px;
+  }
+  .scale{
+    height: 2px;
+  
+    background-color: #d7dcde;
+  
+  }
+  
+  .bar{
+    width: 70%;
+    height: 2px;
+  
+    background-color: #00ca74;
+  }
+  
+  .toggle{
+    width: 4px;
+    height: 4px;
+    padding: 2px;
+  
+    border: 8px solid #fff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+  
+    position: absolute;
+    top: 31px;
+    left: 0;
+    cursor: pointer;
+  }
+  .toggle-min{
+    left: 18px;
+  }
+  .toggle-max{
+    left: 160px;
+  }
+  
+  .price-controls{
+    font-size: 0;
+  }
+  .price-controls label{
+    display: inline-block;
+    width: 50%;
+  
+    font-size: 16px;
+    text-transform: uppercase;
+  
+  }
+  
+  .price-controls input{
+    width: 65px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #283136;
+  
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+  
+  }
+  
+  .max-price{
+    text-align: right;
+  }
