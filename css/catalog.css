@@ -71,6 +71,8 @@ h3 {
 .main-nav{
     padding-top: 49px;
 }
+
+
 /*Flex*/
 /*Навигация*/
 .main-nav{
@@ -150,7 +152,7 @@ h3 {
 }
 
 /*Double range filter*/
-.price-form{
+.price-form, .flex-form, .feature-form{
     padding: 0;
     margin: 0;
   
@@ -247,4 +249,9 @@ h3 {
   
   .max-price{
     text-align: right;
+  }
+
+  /*Filter by type*/
+  .flex-form{
+      
   }

@@ -1,78 +1,95 @@
 /*Links in different states*/
-a.button-green{
+
+a.button-green {
   border-color: #00ca74;
   border-style: solid;
   background-color: #00ca74;
 }
-a.button-yellow{
+
+a.button-yellow {
   border-color: #efc84a;
   border-style: solid;
   background-color: #efc84a;
 }
-a.button-green:hover{
+
+a.button-green:hover {
   background-color: #00bc6c;
   border-color: #00bc6c;
 }
-a.button-green:focus{
+
+a.button-green:focus {
   background-color: #00aa62;
   color: rgba(255, 255, 255, 0.3);
 }
-a.button-yellow:hover{
+
+a.button-yellow:hover {
   background-color: #eab534;
   border-color: #eab534;
 }
-a.button-yellow:focus{
+
+a.button-yellow:focus {
   background-color: #e5a722;
   color: rgba(255, 255, 255, 0.3);
 }
 
 /*Lists*/
-.order-list li{
+
+.order-list li {
   list-style-type: initial;
   color: #fb565a;
   padding: 5px 0;
 }
-.order-text{
+
+.order-text {
   font-size: 16px;
   line-height: 18px;
   color: #000;
   background-color: #fff;
-}  
+}
+
 /*Lists in line*/
-.percents-list{
+
+.percents-list {
   padding: 0;
 }
-.percent{
+
+.percent {
   vertical-align: top;
   font-size: 22px;
   font-weight: 700;
 }
-.percents-list li{
+
+.percents-list li {
   display: inline-block;
   width: 100px;
 }
 
 /*Fonts that differ from inherited*/
-.percent-about{
+
+.percent-about {
   color: #283136;
 }
+
 /*Bold fonts that aren't headings*/
-.main-point{
+
+.main-point {
   font-size: 40px;
   line-height: 50px;
 }
-.about-us{
+
+.about-us {
   font-size: 44px;
   line-height: 44px;
-
   padding-bottom: 35px;
   display: inline-block;
 }
-.percent-number{
+
+.percent-number {
   font-size: 45px;
   line-height: 10px
 }
-.since{
+
+.since {
   font-weight: 700;
   font-size: 16px;
   padding-bottom: 50px;
@@ -81,20 +98,24 @@ a.button-yellow:focus{
   line-height: 24px;
 }
 
-
-.ad{
+.ad {
   padding-bottom: 35px;
 }
-.we-do{
+
+.we-do {
   display: inline-block;
   padding-bottom: 35px;
 }
+
 /*flex*/
+
 /*Основная навигация*/
-.main-nav-wrapper{
+
+.main-nav-wrapper {
   width: 100%;
 }
-.wrapper{
+
+.wrapper {
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
@@ -102,174 +123,258 @@ a.button-yellow:focus{
   justify-content: space-between;
 }
 
-.main-nav{
+.main-nav {
   padding-top: 49px;
 }
 
 /*Слайды в шапке*/
-.introduction-links{
-  background-color: #eee;
-  width: 100%;
-}
-.header-news li{
-  display: flex;
-  width: 1160px;
-  padding: 0 20px;
-  margin: 0 auto;
-  height: fit-content;
-  justify-content: space-around;
-}
-.header-news{
-  padding: 0 20px;
-  margin: 0 auto;
-}
-.header-news-ad{
-  margin: 40px 0;
-}
-.text-wrapper{
-  align-self: center;
-  width: 380px;
+
+.introduction-links {
+  padding-top: 50px;
+  background: #eeeeee;
 }
 
-/*Images size of slides in the header*/
-.first-slide{
+.slides .slide {
+  width: 1160px;
+  padding: 0 20px;
+}
+
+.slider {
+  position: relative;
+  width: 1160px;
+  height: 310px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0 3px;
+  background: #fff;
+  border: 3px solid #fff;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-text {
   width: 380px;
+  padding: 30px 0;
+  color: #283136;
 }
-.first-slide img{
-  width: 698px;
+
+.slide-title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: bold;
+  color: black;
 }
-.second-slide{
-  width: 520px;
+
+.slide .button {
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin-top: 25px;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #fb565a;
+  border-radius: 3px;
 }
-.second-slide img{
-  width: 640px;
+
+.slide:nth-child(1) {
+  background-image: url('../img/slide1.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
 }
-.third-slide{
-  width: 412px;
+
+.slide:nth-child(2) {
+  background-image: url('../img/slide2.png');
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
 }
-.third-slide img{
-  width: 700px;
+
+.slide:nth-child(3) {
+  background-image: url('../img/slide3.png');
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.slide {
+  display: none;
+}
+
+#btn-1:checked~.slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked~.slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked~.slides .slide:nth-child(3) {
+  display: block;
 }
 
 /*Раздел section с услугами*/
-.main-services{
+
+.main-services {
   width: 100%;
 }
-.services-list{
+
+.services-list {
   display: flex;
   justify-content: space-around;
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
 }
-.services-list li{
+
+.services-list li {
   width: 360px;
   padding: 0 20px;
 }
+
 /*Раздел section с описанием компании*/
-.about-company{
+
+.about-company {
   width: 100%;
   padding-top: 80px;
 }
-.section-wrapper{
+
+.section-wrapper {
   display: flex;
   width: 1160px;
   margin: 0 auto;
   padding: 0 20px;
   justify-content: space-between;
 }
-.left-wrapper{
+
+.left-wrapper {
   width: 760px;
   padding: 0 20px;
   margin: 0;
 }
-.right-wrapper{
+
+.right-wrapper {
   width: 360px;
   padding: 0 20px;
   margin: 0;
 }
 
 /*Спонсоры*/
-.sponsors-list{
+
+.sponsors-list {
   display: flex;
   width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
   justify-content: space-between;
 }
+
 /*Слайдер*/
-.header-slider li{
+
+.header-slider li {
   display: inline-block;
   padding: 0;
   margin: 0 auto;
 }
-.header-slider{
+
+.header-slider {
   position: relative;
   left: 50%;
   right: 50%;
 }
 
-
 /*Background images*/
+
 /*For section with class: main-services*/
-.main-services{
+
+.main-services {
   padding-bottom: 80px;
 }
-.service{
+
+.service {
   position: relative;
   padding-top: 200px;
 }
-.service-first::before{
-  content: "";
 
+.service-first::before {
+  content: "";
   width: 300px;
   height: 146px;
-
   position: absolute;
-
   top: 15px;
-
   background-image: url("../img/illustration-1.jpg");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
 }
-.service-second::before{
-  content: "";
 
+.service-second::before {
+  content: "";
   width: 300px;
   height: 146px;
-
   position: absolute;
-
   top: 15px;
-
   background-image: url("../img/illustration-2.jpg");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
 }
-.service-third::before{
-  content: "";
 
+.service-third::before {
+  content: "";
   width: 300px;
   height: 146px;
-
   position: absolute;
-
   top: 15px;
-
   background-image: url("../img/illustration-3.jpg");
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
 }
-
 
 /*Opacity on sponsors images*/
-.sponsors-list img{
+
+.sponsors-list img {
   opacity: 0.2;
 }
-.sponsors-list img:hover{
+
+.sponsors-list img:hover {
   opacity: 1;
 }
-.sponsors-list img{
+
+.sponsors-list img {
   opacity: 0.1;
 }
