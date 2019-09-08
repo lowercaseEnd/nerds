@@ -72,11 +72,6 @@ a.button-yellow:focus {
 
 /*Bold fonts that aren't headings*/
 
-.main-point {
-  font-size: 40px;
-  line-height: 50px;
-}
-
 .about-us {
   font-size: 44px;
   line-height: 44px;
@@ -129,63 +124,80 @@ a.button-yellow:focus {
 
 /*Слайды в шапке*/
 
-.introduction-links {
-  padding-top: 50px;
-  background: #eeeeee;
-}
 
-.slides .slide {
-  width: 1160px;
-  padding: 0 20px;
-}
-
-.slider {
+header{
   position: relative;
-  width: 1160px;
-  height: 310px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
-
-.slider input[type=radio] {
+input[name="toggle"]{
   position: absolute;
   opacity: 0;
 }
-
-.slider-controls {
+.button-controls{
   position: absolute;
-  bottom: 95px;
+  width: 150px;
+  height: 20px;
+  z-index: 100;
+ 
   left: 50%;
-  width: 200px;
-  height: 10px;
-  margin-left: -100px;
-  text-align: center;
-  z-index: 1000;
+  bottom: 50px;
 }
-
-.slider-controls label {
+.radio-label{
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;;
   margin: 0 3px;
-  background: #fff;
   border: 3px solid #fff;
-  vertical-align: top;
+  background-color: #fff;
   border-radius: 50%;
   cursor: pointer;
 }
-
-#btn-1:checked~.slider-controls label[for="btn-1"], #btn-2:checked~.slider-controls label[for="btn-2"], #btn-3:checked~.slider-controls label[for="btn-3"] {
-  background: #c1c1c1;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+.slider-list{
   width: 100%;
-  height: 100%;
-  overflow: hidden;
+  background-color: #eee;
+}
+.slider-list li{
+  box-sizing: border-box;
+  width: 1160px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: 350px;
+}
+.slider-list li{
+  display: none;
+}
+#slide1:checked~.button-controls label[for="slide1"],
+#slide2:checked~.button-controls label[for="slide2"],
+#slide3:checked~.button-controls label[for="slide3"]
+{
+  background-color: #c1c1c1;
+}
+#slide1:checked~.slider-list li:nth-child(1){
+  display: block;
+}
+#slide2:checked~.slider-list li:nth-child(2){
+  display: block;
+}
+#slide3:checked~.slider-list li:nth-child(3){
+  display: block;
+}
+.slider-list li:nth-child(1){
+
+  background-image: url("../img/slide1.png");
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+}
+.slider-list li:nth-child(2){
+
+  background-image: url("../img/slide2.png");
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+}
+.slider-list li:nth-child(3){
+
+  background-image: url("../img/slide3.png");
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
 }
 
 .slide-text {
@@ -201,57 +213,10 @@ a.button-yellow:focus {
   color: black;
 }
 
-.slide .button {
-  display: block;
-  width: 240px;
-  padding: 10px 0;
-  margin-top: 25px;
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  background: #fb565a;
-  border-radius: 3px;
-}
-
-.slide:nth-child(1) {
-  background-image: url('../img/slide1.png');
-  background-repeat: no-repeat;
-  background-position: 100% 10px;
-}
-
-.slide:nth-child(2) {
-  background-image: url('../img/slide2.png');
-  background-repeat: no-repeat;
-  background-position: 100% 10px;
-}
-
-.slide:nth-child(3) {
-  background-image: url('../img/slide3.png');
-  background-repeat: no-repeat;
-  background-position: 100% 0;
-}
-
-.slide {
-  display: none;
-}
-
-#btn-1:checked~.slides .slide:nth-child(1) {
-  display: block;
-}
-
-#btn-2:checked~.slides .slide:nth-child(2) {
-  display: block;
-}
-
-#btn-3:checked~.slides .slide:nth-child(3) {
-  display: block;
-}
-
 /*Раздел section с услугами*/
 
 .main-services {
+  padding-top: 30px;
   width: 100%;
 }
 
@@ -303,20 +268,6 @@ a.button-yellow:focus {
   padding: 0 20px;
   margin: 0 auto;
   justify-content: space-between;
-}
-
-/*Слайдер*/
-
-.header-slider li {
-  display: inline-block;
-  padding: 0;
-  margin: 0 auto;
-}
-
-.header-slider {
-  position: relative;
-  left: 50%;
-  right: 50%;
 }
 
 /*Background images*/

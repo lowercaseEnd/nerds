@@ -140,7 +140,7 @@ h2 {
   border-width: 3px 0 0 0;
   border-color: #fb565a;
   border-style: solid;
-
+  border-radius: 3px;
   
   text-decoration: none;
 }
