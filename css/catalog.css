@@ -7,22 +7,6 @@ h3 {
 .main-content{
     padding-top: 30px;
 }
-.filter-form{
-    padding-top: 30px;
-}
-.filter-name{
-    display: inline-block;
-    padding-bottom: 30px;
-}
-.price-input{
-    padding-bottom: 15px;
-}
-.price-form{
-    padding-bottom: 30px;
-}
-.flex-form{
-    padding-bottom: 40px;
-}
 /*Шрифты, которые отличаются от наследуемых*/
 /*Жирный шрифт на макете, который заголовком не является*/
 .filter-name, .sort-by-heading{
@@ -151,107 +135,187 @@ h3 {
     width: 60px;
 }
 
-/*Double range filter*/
-.price-form, .flex-form, .feature-form{
-    padding: 0;
-    margin: 0;
-  
-    border: none;
-  }
-  
-  .range-filter{
-    width: 260px;
-    padding-top: 49px;
-  }
-  
-  .filter-name{
-    font-size: 18px;
-    line-height: 24px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  
-  .range-controls{
-    position: relative;
-    height: 78px;
-    margin-bottom: 15px;
-    padding-top: 39px;
-    padding-left: 20px;
-    padding-right: 20px;
-  
-    background-color: #f1f1f1;
-  
-    border-radius: 5px;
-  }
-  .scale{
-    height: 2px;
-  
-    background-color: #d7dcde;
-  
-  }
-  
-  .bar{
-    width: 70%;
-    height: 2px;
-  
-    background-color: #00ca74;
-  }
-  
-  .toggle{
-    width: 4px;
-    height: 4px;
-    padding: 2px;
-  
-    border: 8px solid #fff;
-    background-color: #ababab;
-    border-radius: 50%;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
-  
-    position: absolute;
-    top: 31px;
-    left: 0;
-    cursor: pointer;
-  }
-  .toggle-min{
-    left: 18px;
-  }
-  .toggle-max{
-    left: 160px;
-  }
-  
-  .price-controls{
-    font-size: 0;
-  }
-  .price-controls label{
-    display: inline-block;
-    width: 50%;
-  
-    font-size: 16px;
-    text-transform: uppercase;
-  
-  }
-  
-  .price-controls input{
-    width: 65px;
-    padding: 8px 10px;
-    margin-left: 10px;
-    
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
-    text-align: center;
-    color: #283136;
-  
-    border: none;
-    border-radius: 5px;
-    background-color: #f1f1f1;
-  
-  }
-  
-  .max-price{
-    text-align: right;
-  }
+/*Hide dots on the lists and adjust them to the left*/
+.checkbox-list, .radio-list, .price-numbers{
+	margin: 0;
+	padding: 0;
 
-  /*Filter by type*/
-  .flex-form{
-      
-  }
+	list-style-type: none;
+}
+.checkbox-list li, .radio-list li{
+	padding: 5px 35px;
+}
+.checkbox-list label, .radio-list label{
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+/*Radio buttons and checkboxes when checked and unchecked*/
+.radio-button + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -4px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/radio-off-grey.png");
+	background-repeat: no-repeat;
+}
+.radio-button:checked + label::after{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -4px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/radio-on-grey.png");
+	background-repeat: no-repeat;
+}
+
+.radio-button:checked + label::before{
+	display: none;
+}
+.checkbox + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -1px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/checkbox-off-grey.png");
+	background-repeat: no-repeat;
+}
+.checkbox:checked + label::after{
+	content: "";
+
+	position: absolute;
+	left: -41.6px;
+	top: -1px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url("../img/checkbox-on-grey.png");
+	background-repeat: no-repeat;
+}
+.checkbox:checked + label::before{
+	display: none;
+}
+.visually-hidden{
+	opacity: 0;
+}
+/*Hide border on forms*/
+form fieldset{
+	border: none;
+}
+
+/*First form with double range and inputs fields*/
+.price-range-text{
+	background-color: #eeeeee;
+	border: none;
+
+	width: 80px;
+	height: 38px;
+
+	
+	text-align: center;
+	
+	border-radius: 5px;
+	font-size: 16px;
+
+	margin-left: 5px;
+}
+label[for="max-price"]{
+	padding-left: 40px;
+}
+.price-field strong{
+	text-transform: uppercase;
+}
+form legend{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.price-numbers li{
+	display: inline-block;
+}
+/*Double range*/
+.chosen-range{
+	position: absolute;
+	top: 0px;
+	left: 1px;
+
+	height: 2px;
+	width: 140px;
+
+	background-color: #00ca74;
+}
+.whole-range{
+	position: absolute;
+	top: 40px;
+	left: 5px;
+
+	height: 2px;
+	width: 90%;
+	
+	background-color: #d7dcde;
+}
+
+.range-bg{
+	position: relative;
+
+	box-sizing: border-box;
+	width: 260px;
+	height: 80px;
+
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+
+.toggle{
+	position: relative;
+	
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	background-color: #ababab;
+	border-radius: 50%;
+	border: 8px solid #fff;
+}
+.toggle-min{
+	top: 31px;
+	left: 2px;
+}
+.toggle-max{
+	top: 11px;
+	left: 140px;
+}
+.price-form{
+	width: 260px;
+}
+/*Spaces between forms*/
+.price-numbers{
+	padding-top: 14px;
+}
+.price-field{
+	margin-bottom: 60px;
+}
+.radio-form{
+	margin-bottom: 50px;
+}
+.radio-list, .checkbox-list{
+	margin-left: 10px;
+}
+.price-field{
+	margin-left: 5px;
+}
+
+.radio-list li, .checkbox-list li{
+	padding-top: 15px;
+}

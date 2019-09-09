@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="check.css">
+</head>
+
+<body>
+    <section>
+        <form action="" method="POST"  class="filter-form">
+            <fieldset class="price-field">
+                <legend  class="filter-name"><strong>стоимость:</strong></legend>
+                <div class="range-bg">
+                    <div class="whole-range">
+                        <div class="chosen-range"></div>
+                    </div>
+                    <div class="toggle toggle-min">
+
+                    </div>
+                    <div class="toggle toggle-max">
+
+                    </div>
+                </div>
+                <ul class="price-numbers">
+                    <li>
+                        <label for="min-price">От</label>
+                        <input type="text" id="min-price" class="price-range-text" value="0">
+                    </li>
+                    <li>
+
+                        <label for="max-price">До</label>
+                        <input type="text" id="max-price" class="price-range-text" value="15000">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="radio-form">
+                <legend  class="filter-name"><strong class="filter-name">СЕТКА:</strong></legend>
+                <ul class="radio-list">
+                    <li class="filter-option">
+                        <input checked name="radio" id="adaptive-radio" type="radio"
+                            class="visually-hidden radio-button">
+                        <label for="adaptive-radio">Адаптивная</label>
+                    </li>
+                    <li class="filter-option">
+                        <input name="radio" id="fixed-radio" type="radio" class="visually-hidden radio-button">
+                        <label for="fixed-radio">Фиксированная</label>
+                    </li>
+                    <li class="filter-option">
+                        <input name="radio" id="fluid-radio" type="radio" class="visually-hidden radio-button">
+                        <label for="fluid-radio">Резиновая</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="feature-form">
+                <legend  class="filter-name"><strong class="filter-name">ОСОБЕННОСТИ:</strong></legend>
+                <ul class="checkbox-list">
+                    <li class="filter-option">
+                        <input type="checkbox" id="slider-checkbox" class="visually-hidden checkbox" checked>
+                        <label for="slider-checkbox">Слайдер</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="advantages-checkbox" class="visually-hidden checkbox">
+                        <label for="advantages-checkbox">Блок преимуществ</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="news-checkbox" class="visually-hidden checkbox" checked>
+                        <label for="news-checkbox">Новости</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="gallery-checkbox" class="visually-hidden checkbox">
+                        <label for="gallery-checkbox">Галерея</label>
+                    </li>
+                    <li class="filter-option">
+                        <input type="checkbox" id="cart-checkbox" class="visually-hidden checkbox">
+                        <label for="cart-checkbox">Корзина</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
