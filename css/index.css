@@ -106,21 +106,6 @@ a.button-yellow:focus {
 
 /*Основная навигация*/
 
-.main-nav-wrapper {
-  width: 100%;
-}
-
-.wrapper {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.main-nav {
-  padding-top: 49px;
-}
 
 /*Слайды в шапке*/
 
@@ -158,7 +143,7 @@ input[name="toggle"]{
 }
 .slider-list li{
   box-sizing: border-box;
-  width: 1160px;
+  width: 1180px;
   padding: 0 20px;
   margin: 0 auto;
   height: 350px;
@@ -168,8 +153,7 @@ input[name="toggle"]{
 }
 #slide1:checked~.button-controls label[for="slide1"],
 #slide2:checked~.button-controls label[for="slide2"],
-#slide3:checked~.button-controls label[for="slide3"]
-{
+#slide3:checked~.button-controls label[for="slide3"]{
   background-color: #c1c1c1;
 }
 #slide1:checked~.slider-list li:nth-child(1){
@@ -223,7 +207,7 @@ input[name="toggle"]{
 .services-list {
   display: flex;
   justify-content: space-around;
-  width: 1160px;
+  width: 1180px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -242,7 +226,7 @@ input[name="toggle"]{
 
 .section-wrapper {
   display: flex;
-  width: 1160px;
+  width: 1180px;
   margin: 0 auto;
   padding: 0 20px;
   justify-content: space-between;
@@ -264,7 +248,7 @@ input[name="toggle"]{
 
 .sponsors-list {
   display: flex;
-  width: 1160px;
+  width: 1180px;
   padding: 0 20px;
   margin: 0 auto;
   justify-content: space-between;

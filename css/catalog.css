@@ -18,31 +18,6 @@ h3 {
 .next-link{
     background-color: #eeeeee;
 }
-.pages-list{
-	display: flex;
-	justify-content: space-between;
-	width: 450px;
-}
-.page-link{
-	
-    padding: 15px;
-    background-color: #eeeeee;
-    color: #fff;
-}
-.page-link:hover, .next-link:hover{
-    background-color: #dfdfdf; 
-}
-.page-link:active, .next-link:active{
-    background-color: #d5d5d5;
-    border-top-style: initial;
-    border-top-width: 2px;
-    border-top-color: hsla(183, 47, 1, 0.1); 
-}
-.page-link:focus{
-    border-style: initial;
-    border-width: 2px;
-    border-color: #dbdbdb;
-}
 .sort-by-link, .asc-desc-link{
     font-size: 14px;
     line-height: 18px;
@@ -56,13 +31,6 @@ h3 {
     color: rgba(0, 0, 0, 1);
 }
 
-/*Списки*/
-
-.main-nav{
-    padding-top: 49px;
-}
-
-
 /*Flex*/
 /*Навигация*/
 .main-nav{
@@ -70,16 +38,6 @@ h3 {
     min-height: 320px;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-.main-nav-wrapper{
-    width: 100%;
-}
-.wrapper{
-    display: flex;
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 1160px;
     justify-content: space-between;
 }
 .page-header{
@@ -102,7 +60,7 @@ h3 {
 }
 .main-wrapper{
     display: flex;
-    width: 1160px;
+    width: 1180px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -168,6 +126,7 @@ h3 {
 	
 	background-image: url("../img/radio-off.png");
 	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 .radio-button:checked + label::after{
 	content: "";
@@ -180,7 +139,7 @@ h3 {
 	
 	background-image: url("../img/radio-on.png");
 	background-repeat: no-repeat;
-	opacity: 0.1;
+	opacity: 0.4;
 }
 
 .radio-button:checked + label::before{
@@ -195,8 +154,9 @@ h3 {
 	width: 25px;
 	height: 25px;
 	
-	background-image: url("../img/checkbox-off-grey.png");
+	background-image: url("../img/checkbox-off.png");
 	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 .checkbox:checked + label::after{
 	content: "";
@@ -208,14 +168,19 @@ h3 {
 	width: 27px;
 	height: 23px;
 
-	background-image: url("../img/checkbox-on-grey.png");
+	background-image: url("../img/checkbox-on.png");
 	background-repeat: no-repeat;
+	opacity: 0.4;
 }
 .checkbox:checked + label::before{
 	display: none;
 }
-.visually-hidden{
-	opacity: 0;
+
+.radio-button + label:hover::before,
+.radio-button:checked + label:hover::after,
+.checkbox + label:hover::before,
+.checkbox:checked + label:hover::after{
+	opacity: 1;
 }
 /*Hide border on forms*/
 form fieldset{
@@ -390,40 +355,6 @@ html, body{
   text-align: center;
 }
 
-
-/*Button*/
-.button {
-  text-transform: uppercase;
-  font: inherit;
-  text-align: center;
-  display: inline-block;
-  background-color: #fb565a;
-  color: #fff;
-  padding: 15px 15px;
-  margin: 0;
-  width: 240px;
-  height: 50px;
-
-  border-width: 3px 0 0 0;
-  border-color: #fb565a;
-  border-style: solid;
-  border-radius: 3px;
-  
-  text-decoration: none;
-}
-
-.button:hover {
-  background-color: #e74246;
-  border-color: #e74246;
-}
-
-.button:focus {
-  background-color: #d7373b;
-  color: rgba(255, 255, 255, 0.3);
-  border-top-style: solid;
-  border-top-width: 3px;
-  border-top-color: rgb(0, 0, 0, 0.1);
-}
 
 /*flex links to dif pages at the bottom*/
 .pages-list{

@@ -1,0 +1,81 @@
+.write-us{
+  width: 1000px;
+  height: 590px;
+  color: #000;
+  background-color: #eee;
+  box-sizing: border-box;
+
+  padding: 100px 100px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  position: relative;
+}
+.button-close{
+  position: absolute;
+  top: 80px;
+  left: 880px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  border: none;
+
+  background-color: #eee;
+}
+
+.button-close::before,
+.button-close::after{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 0;
+  left: 0;
+  background-image: url("img/close-cross.png");
+  background-repeat: no-repeat;
+}
+.button-send{
+  width: 260px;
+}
+
+.top-forms{
+  display: flex;
+  justify-content: space-between;
+}
+.write-us label{
+  display: block;
+}
+.name-form, .email-form{
+  width: 400px;
+  padding: 0 20px;
+}
+.message-form{
+  width: 800px;
+  padding: 0 20px;
+}
+.name-form input, .email-form input{
+  width: 380px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+}
+.message-form textarea{
+  width: 800px;
+  height: 120px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  resize: none;
+}
+.write-us legend{
+  padding: 10px 20px
+}
+.button-send{
+  margin: 20px;
+  padding: 10px 20px;
+}

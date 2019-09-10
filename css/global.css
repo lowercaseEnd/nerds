@@ -48,8 +48,22 @@ a {
 
 .main-nav, .cart {
   line-height: 30px;
+  padding-top: 49px;
+
 }
 
+.main-nav{
+  width: 100%;
+  background-color: #eee;
+}
+
+.wrapper {
+  width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
 /*List in line*/
 .nav-list{
   display: flex;
@@ -67,11 +81,7 @@ a {
 /*Background image*/
 /*Cart*/
 .cart{
-  width: 160px;
-  padding-left: 40px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  padding-top: 30px;
 }
 .cart-link{
   position: relative;
@@ -83,7 +93,7 @@ a {
   height: 18px;
 
   position: absolute;
-  top: 5px;
+  top: 0;
   right: 95px;
 
   background-image: url("../img/svg/cart-icon.svg");
@@ -129,6 +139,7 @@ h2 {
 .button {
   font: inherit;
   text-align: center;
+  text-transform: uppercase;
   display: inline-block;
   background-color: #fb565a;
   color: #fff;
@@ -143,6 +154,7 @@ h2 {
   border-radius: 3px;
   
   text-decoration: none;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -232,7 +244,7 @@ h2 {
 }
 .footer-info{
   display: flex;
-  width: 1160px;
+  width: 1180px;
   padding: 70px 0;
 }
 
@@ -252,4 +264,92 @@ h2 {
   width: 760px;
   justify-content: space-between;
   padding-bottom: 30px;
+}
+
+/*write us modal form*/
+.write-us{
+  width: 1000px;
+  height: 590px;
+  color: #000;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  padding: 100px 100px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  position: relative;
+
+  box-shadow: -5px 2px rgba(0, 1, 1, 0.7);
+}
+.button-close{
+  position: absolute;
+  top: 80px;
+  left: 880px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  border: none;
+
+  background-color: #fff;
+}
+.button-close:hover{
+  background-color: #fff;
+}
+
+.button-close::before,
+.button-close::after{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/close-cross.png");
+  background-repeat: no-repeat;
+}
+.button-send{
+  width: 260px;
+}
+
+.top-forms{
+  display: flex;
+  justify-content: space-between;
+}
+.write-us label{
+  display: block;
+}
+.name-form, .email-form{
+  width: 400px;
+  padding: 0 20px;
+}
+.message-form{
+  width: 800px;
+  padding: 0 20px;
+}
+.name-form input, .email-form input{
+  width: 380px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+}
+.message-form textarea{
+  width: 800px;
+  height: 120px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  resize: none;
+}
+.write-us legend{
+  padding: 10px 20px
+}
+.button-send{
+  margin: 20px;
+  padding: 10px 20px;
 }
