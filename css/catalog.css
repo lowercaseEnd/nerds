@@ -18,7 +18,13 @@ h3 {
 .next-link{
     background-color: #eeeeee;
 }
+.pages-list{
+	display: flex;
+	justify-content: space-between;
+	width: 450px;
+}
 .page-link{
+	
     padding: 15px;
     background-color: #eeeeee;
     color: #fff;
@@ -160,7 +166,7 @@ h3 {
 	width: 25px;
 	height: 25px;
 	
-	background-image: url("../img/radio-off-grey.png");
+	background-image: url("../img/radio-off.png");
 	background-repeat: no-repeat;
 }
 .radio-button:checked + label::after{
@@ -172,8 +178,9 @@ h3 {
 	width: 25px;
 	height: 25px;
 	
-	background-image: url("../img/radio-on-grey.png");
+	background-image: url("../img/radio-on.png");
 	background-repeat: no-repeat;
+	opacity: 0.1;
 }
 
 .radio-button:checked + label::before{
@@ -318,4 +325,154 @@ form legend{
 
 .radio-list li, .checkbox-list li{
 	padding-top: 15px;
+}
+
+
+/**/
+html, body{
+  box-sizing: border-box;
+}
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+/*Main offers*/
+.hover-info{
+  display: none;
+}
+.item-link:hover+.hover-info,
+.item-link:focus+.hover-info,
+.item-link:active+.hover-info
+{
+  display: block;
+}
+.item-link:hover+.hover-info::after,
+.item-link:active+.hover-info::after,
+.item-link:focus+.hover-info::after{
+  content: "";
+  position: absolute;
+  top: -404px;
+  left: 0;
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/browser.png");
+  background-repeat: no-repeat;
+}
+/*Flex*/
+.deals-list{
+  list-style-type: none;
+  width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.item-link img{
+  width: 360px;
+  height: 616px;
+}
+.deal-item{
+  position: relative;
+  padding: 15px 0;
+}
+.hover-info{
+  position: absolute;
+  top: 420px;
+  left: 0;
+
+  width: 360px;
+  min-height: 213px;
+
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+
+/*Button*/
+.button {
+  text-transform: uppercase;
+  font: inherit;
+  text-align: center;
+  display: inline-block;
+  background-color: #fb565a;
+  color: #fff;
+  padding: 15px 15px;
+  margin: 0;
+  width: 240px;
+  height: 50px;
+
+  border-width: 3px 0 0 0;
+  border-color: #fb565a;
+  border-style: solid;
+  border-radius: 3px;
+  
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+  border-color: #e74246;
+}
+
+.button:focus {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: rgb(0, 0, 0, 0.1);
+}
+
+/*flex links to dif pages at the bottom*/
+.pages-list{
+  list-style-type: none;
+  width: 450px;
+  margin: 60px 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.pages-list li{
+	padding: 0 5px;
+}
+.page-link{
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  background-color: #eeeeee;
+  color: #000;
+}
+.page-link:hover{
+  background-color: #dfdfdf;
+  border: none;
+}
+.page-link:active{
+  background-color: #d5d5d5;
+  border-top: 3px solid rgba(0, 0, 1, 0.1);
+}
+.page-link:focus, 
+.current-page{
+  border: 3px solid #eee;
+  background-color: #fff;
+  color: #000;
+}
+.next-link{
+  width: 260px;
+
+  line-height: 20px;
+
+  background-color: #eeeeee;
+  color: #000;
+
+  border: none;
+}
+.next-link:hover{
+  background-color: #dfdfdf;
+}
+.next-link:active, .next-link:focus{
+  background-color: #d5d5d5;
+  border-top: 3px solid rgba(0, 0, 1, 0.1);
 }
