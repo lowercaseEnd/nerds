@@ -137,14 +137,19 @@ h2 {
 /*Different states of buttons and links that looks like buttons*/
 
 .button {
-  font: inherit;
+  font-family: inherit;
+
   text-align: center;
   text-transform: uppercase;
+
   display: inline-block;
+
   background-color: #fb565a;
   color: #fff;
+
   padding: 15px 15px;
   margin: 0;
+  
   width: 240px;
   height: 50px;
 
@@ -363,29 +368,3 @@ ul{
   padding: 0;
   margin: 0;
 }
-/* .asc-desc-list li{
-  margin: 0 9px;
-  position: relative;
-}
-.asc-desc-list a{
-  font-size: 0;
-}
-.asc-desc-list a::before,
-.asc-desc-list a::after{
-  content: "";
-  width: 11px;
-  height: 10px;
-  position: relative;
-
-  background-repeat: no-repeat;
-}
-.asc-desc-list a::before{
-  background-image: url("../img/icon-up-dir.png");
-  top: 0;
-  left: 0;
-}
-.asc-desc-list a::before{
-  background-image: url("../img/icon-down-dir.png");
-  top: 0;
-  left: 0;
-} */

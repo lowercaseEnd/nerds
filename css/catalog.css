@@ -7,7 +7,8 @@ h3 {
 /*Жирный шрифт на макете, который заголовком не является*/
 .filter-name, .sort-by-heading{
     font-size: 30px;
-    line-height: 30px;
+    line-height: 1;
+    text-transform: uppercase;
   }
 
 /*Ссылки*/
@@ -22,7 +23,7 @@ h3 {
 .sort-by-link:hover, .asc-desc-link:hover{
     color: rgba(0, 0, 0, 0.6);
 }
-.sort-by-link:focus, .asc-desc-link:focus{
+.sort-by-link:focus, .asc-desc-link:focus, .active-link{
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
@@ -252,9 +253,12 @@ form legend{
 .range-bg{
 	position: relative;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
+  
 	width: 260px;
 	height: 80px;
+
+  margin-top: 40px;
 
 	background-color: #eeeeee;
 	border-radius: 5px;
