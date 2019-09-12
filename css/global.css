@@ -282,7 +282,7 @@ h2 {
 
   position: relative;
 
-  box-shadow: -5px 2px rgba(0, 1, 1, 0.7);
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.7);
 }
 .button-close{
   position: absolute;
@@ -300,17 +300,21 @@ h2 {
 .button-close:hover{
   background-color: #fff;
 }
+.button-close:focus{
+  background: #fff;
 
+}
 .button-close::before,
 .button-close::after{
   content: "";
   position: absolute;
   width: 21px;
   height: 21px;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 3px;
   background-image: url("../img/close-cross.png");
   background-repeat: no-repeat;
+  opacity: 0.3;
 }
 .button-send{
   width: 260px;
@@ -339,7 +343,7 @@ h2 {
   color: rgba(0, 0, 0, 0.5);
 }
 .message-form textarea{
-  width: 800px;
+  width: 780px;
   height: 120px;
   border: 2px solid #d7dcde;
   background-color: #fff;
@@ -353,3 +357,35 @@ h2 {
   margin: 20px;
   padding: 10px 20px;
 }
+
+/*Ascending descending sort menu*/
+ul{
+  padding: 0;
+  margin: 0;
+}
+/* .asc-desc-list li{
+  margin: 0 9px;
+  position: relative;
+}
+.asc-desc-list a{
+  font-size: 0;
+}
+.asc-desc-list a::before,
+.asc-desc-list a::after{
+  content: "";
+  width: 11px;
+  height: 10px;
+  position: relative;
+
+  background-repeat: no-repeat;
+}
+.asc-desc-list a::before{
+  background-image: url("../img/icon-up-dir.png");
+  top: 0;
+  left: 0;
+}
+.asc-desc-list a::before{
+  background-image: url("../img/icon-down-dir.png");
+  top: 0;
+  left: 0;
+} */

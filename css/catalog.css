@@ -3,10 +3,6 @@ h3 {
     font-size: 18px;
     line-height: 30px;
 }
-
-.main-content{
-    padding-top: 30px;
-}
 /*Шрифты, которые отличаются от наследуемых*/
 /*Жирный шрифт на макете, который заголовком не является*/
 .filter-name, .sort-by-heading{
@@ -57,6 +53,7 @@ h3 {
 /*Main*/
 .main-content{
     width: 100%;
+    margin-top: 60px;
 }
 .main-wrapper{
     display: flex;
@@ -84,14 +81,27 @@ h3 {
 }
 /*Sort*/
 .sort-by{
-    display: flex;
-    justify-content: space-between;
-    width: 760px;
+  position: relative;
+  width: 800px;
+  padding: 0 20px;
+  height: 60px;
+}
+.sort-by-heading{
+  position: absolute;
+  top: -30px;
+  left: 40px;
 }
 .sort-by-list{
-    display: flex;
-    justify-content: space-between;
-    width: 280px;
+  position: relative;
+  top: 0;
+  left: 390px;
+  
+  display: flex;
+  justify-content: flex-end;
+  width: 280px;
+}
+.sort-by-type{
+  padding: 0 12px;
 }
 .asc-desc-list{
     display: flex;
@@ -293,14 +303,6 @@ form legend{
 }
 
 
-/**/
-html, body{
-  box-sizing: border-box;
-}
-*, *::before, *::after{
-  box-sizing: inherit;
-}
-
 /*Main offers*/
 .hover-info{
   display: none;
@@ -406,4 +408,30 @@ html, body{
 .next-link:active, .next-link:focus{
   background-color: #d5d5d5;
   border-top: 3px solid rgba(0, 0, 1, 0.1);
+}
+
+
+.asc-desc-list li{
+  display: inline-block;
+  padding: 0 9px;
+}
+.sort-by-list{
+  align-items: center;
+}
+
+.asc-desc{
+  position: relative;
+  top: -50px;
+  left: 740px;
+}
+.asc-desc-list{
+  position: absolute;
+  top: 30px;
+  left: -10px;
+}
+.asc-desc-list img{
+  opacity: 0.6;
+}
+img[src*="up-dir"]{
+  opacity: 1;
 }
