@@ -224,21 +224,25 @@ h2 {
   position: relative;
 }
 /*Social links*/
-.social-link img{
+.social-link object{
   background-color: #e1e1e1;
   width: 60px;
   height: 60px;
+  padding: 8px;
+  border: 10px solid #e1e1e1;
+  border-radius: 50%;
   
 }
 .social-link{
-  padding: 30px;
+  padding: 10px;
 }
 .soc-media{
   display: flex;
-  width: 360px;
+  width: 400px;
   padding: 0 20px;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: flex-start;
 }
 .footer-text{
   display: flex;
@@ -251,6 +255,7 @@ h2 {
   display: flex;
   width: 1180px;
   padding: 70px 0;
+  margin: 0 auto;
 }
 
 /*Write us modal*/
@@ -373,4 +378,9 @@ h2 {
 ul{
   padding: 0;
   margin: 0;
+}
+
+/*Modal*/
+.modal{
+  display: none;
 }

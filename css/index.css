@@ -222,6 +222,7 @@ input[name="toggle"]{
 .about-company {
   width: 100%;
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 .section-wrapper {
@@ -312,4 +313,24 @@ input[name="toggle"]{
 
 .sponsors-list img {
   opacity: 0.1;
+}
+
+/*Divide between sections*/
+.main-services{
+  background-image: url("../img/divide.png");
+  background-repeat: no-repeat;
+  background-position: bottom; 
+}
+.about-company{
+  background-image: url("../img/divide.png");
+  background-repeat: no-repeat;
+  background-position: bottom; 
+
+}
+.sponsors{
+  background-image: url("../img/divide.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 50px 0 30px 0;
+  margin-bottom: 70px;
 }
