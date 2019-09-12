@@ -149,7 +149,7 @@ h2 {
 
   padding: 15px 15px;
   margin: 0;
-  
+
   width: 240px;
   height: 50px;
 
@@ -309,17 +309,23 @@ h2 {
   background: #fff;
 
 }
-.button-close::before,
-.button-close::after{
+.button-close::before{
   content: "";
   position: absolute;
   width: 21px;
   height: 21px;
-  top: 5px;
-  left: 3px;
-  background-image: url("../img/close-cross.png");
+  top: 4px;
+  left: 4px;
+  background-image: url("../img/svg/close-cross.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+.button-close:hover:before{
+  opacity: 1;
+}
+.button-close:active::before,
+.button-close:focus::before{
+  opacity: 0.1;
 }
 .button-send{
   width: 260px;
