@@ -259,12 +259,6 @@ h2 {
 }
 
 /*Write us modal*/
-.write-us {
-  width: 960px;
-  padding: 30px 100px;
-
-  background-color: #fff;
-}
 .modal-heading{
   display: inline-block;
   padding-bottom: 50px;
@@ -277,6 +271,9 @@ h2 {
 }
 
 /*write us modal form*/
+.modal-section{
+  display: none;
+}
 .write-us{
   width: 1000px;
   height: 590px;
@@ -381,6 +378,6 @@ ul{
 }
 
 /*Modal*/
-.modal{
-  display: none;
+.modal-show{
+  display: block;
 }
