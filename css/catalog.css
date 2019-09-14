@@ -3,29 +3,17 @@ h3 {
     font-size: 18px;
     line-height: 30px;
 }
+/*Шрифты, которые отличаются от наследуемых*/
+/*Жирный шрифт на макете, который заголовком не является*/
+.filter-name, .sort-by-heading{
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
 
 /*Ссылки*/
 .next-link{
     background-color: #eeeeee;
-}
-.page-link{
-    padding: 15px;
-    background-color: #eeeeee;
-    color: #fff;
-}
-.page-link:hover, .next-link:hover{
-    background-color: #dfdfdf; 
-}
-.page-link:active, .next-link:active{
-    background-color: #d5d5d5;
-    border-top-style: initial;
-    border-top-width: 2px;
-    border-top-color: hsla(183, 47, 1, 0.1); 
-}
-.page-link:focus{
-    border-style: initial;
-    border-width: 2px;
-    border-color: #dbdbdb;
 }
 .sort-by-link, .asc-desc-link{
     font-size: 14px;
@@ -35,36 +23,419 @@ h3 {
 .sort-by-link:hover, .asc-desc-link:hover{
     color: rgba(0, 0, 0, 0.6);
 }
-.sort-by-link:focus, .asc-desc-link:focus{
+.sort-by-link:focus, .asc-desc-link:focus, .active-link{
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
 }
 
-/**/
+/*Flex*/
+/*Навигация*/
 .main-nav{
-    min-height: 350px;
+    display: flex;
+    min-height: 320px;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-.main-nav-wrapper{
-    width: 100%;
-    margin-bottom: 80px;
-    background-color: #eee;
-}
-.wrapper{
-    display: flex;
-    margin: 0 auto;
-    padding: 0 10px;
-    width: 1150px;
-    justify-content: space-between;
-}
 .page-header{
-    padding-bottom: 112px;
-    min-height: 50px;
+    margin-bottom: 110px;
 }
 
-/*Списки*/
-.nav-list li{
-    display: inline-block;
+/*Каталог*/
+.deals-list{
+    width: 760px;
+}
+.deals-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*Main*/
+.main-content{
+    width: 100%;
+    margin-top: 60px;
+}
+.main-wrapper{
+    display: flex;
+    width: 1180px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.sort-by{
+    width: 760px;
+}
+
+/*Sort + catalog*/
+.section-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    width: 360px;
+    padding: 0 20px;
+}
+.catalog{
+    width: 760px;
+    padding: 0 20px;
+    align-content: space-between;
+}
+/*Sort*/
+.sort-by{
+  position: relative;
+  width: 800px;
+  padding: 0 20px;
+  height: 60px;
+}
+.sort-by-heading{
+  position: absolute;
+  top: -30px;
+  left: 40px;
+}
+.sort-by-list{
+  position: relative;
+  top: 0;
+  left: 390px;
+  
+  display: flex;
+  justify-content: flex-end;
+  width: 280px;
+}
+.sort-by-type{
+  padding: 0 12px;
+}
+.asc-desc-list{
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+/*Hide dots on the lists and adjust them to the left*/
+.checkbox-list, .radio-list, .price-numbers{
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+.checkbox-list li, .radio-list li{
+	padding: 5px 35px;
+}
+.checkbox-list label, .radio-list label{
+	position: relative;
+	display: block;
+	cursor: pointer;
+}
+/*Radio buttons and checkboxes when checked and unchecked*/
+.radio-button + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -4px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/svg/radio-off.svg");
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+.radio-button:checked + label::after{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -4px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/svg/radio-on.svg");
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+
+.radio-button:checked + label::before{
+	display: none;
+}
+.checkbox + label::before{
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -1px;
+
+	width: 25px;
+	height: 25px;
+	
+	background-image: url("../img/svg/checkbox-off.svg");
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+.checkbox:checked + label::after{
+	content: "";
+
+	position: absolute;
+	left: -41.6px;
+	top: -1px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url("../img/svg/checkbox-on.svg");
+	background-repeat: no-repeat;
+	opacity: 0.4;
+}
+.checkbox:checked + label::before{
+	display: none;
+}
+
+.radio-button + label:hover::before,
+.radio-button:checked + label:hover::after,
+.checkbox + label:hover::before,
+.checkbox:checked + label:hover::after{
+	opacity: 1;
+}
+/*Hide border on forms*/
+form fieldset{
+	border: none;
+}
+
+/*First form with double range and inputs fields*/
+.price-range-text{
+	background-color: #eeeeee;
+	border: none;
+
+	width: 80px;
+	height: 38px;
+
+	
+	text-align: center;
+	
+	border-radius: 5px;
+	font-size: 16px;
+
+	margin-left: 5px;
+}
+label[for="max-price"]{
+	padding-left: 40px;
+}
+.price-field strong{
+	text-transform: uppercase;
+}
+form legend{
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.price-numbers li{
+	display: inline-block;
+}
+/*Double range*/
+.chosen-range{
+	position: absolute;
+	top: 0px;
+	left: 1px;
+
+	height: 2px;
+	width: 140px;
+
+	background-color: #00ca74;
+}
+.whole-range{
+	position: absolute;
+	top: 40px;
+	left: 5px;
+
+	height: 2px;
+	width: 90%;
+	
+	background-color: #d7dcde;
+}
+
+.range-bg{
+	position: relative;
+
+  box-sizing: border-box;
+  
+	width: 260px;
+	height: 80px;
+
+  margin-top: 40px;
+
+	background-color: #eeeeee;
+	border-radius: 5px;
+}
+
+.toggle{
+	position: relative;
+	
+	box-sizing: border-box;
+	width: 20px;
+	height: 20px;
+	background-color: #ababab;
+	border-radius: 50%;
+	border: 8px solid #fff;
+}
+.toggle-min{
+	top: 31px;
+	left: 2px;
+}
+.toggle-max{
+	top: 11px;
+	left: 140px;
+}
+.price-form{
+	width: 260px;
+}
+/*Spaces between forms*/
+.price-numbers{
+	padding-top: 14px;
+}
+.price-field{
+	margin-bottom: 60px;
+}
+.radio-form{
+	margin-bottom: 50px;
+}
+.radio-list, .checkbox-list{
+	margin-left: 10px;
+}
+.price-field{
+	margin-left: 5px;
+}
+
+.radio-list li, .checkbox-list li{
+	padding-top: 15px;
+}
+
+
+/*Main offers*/
+.hover-info{
+  display: none;
+}
+.item-link:hover+.hover-info,
+.item-link:focus+.hover-info,
+.item-link:active+.hover-info
+{
+  display: block;
+}
+.item-link:hover+.hover-info::after,
+.item-link:active+.hover-info::after,
+.item-link:focus+.hover-info::after{
+  content: "";
+  position: absolute;
+  top: -404px;
+  left: 0;
+  width: 360px;
+  height: 40px;
+
+  background-image: url("../img/svg/browser.svg");
+  background-repeat: no-repeat;
+}
+/*Flex*/
+.deals-list{
+  list-style-type: none;
+  width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.item-link img{
+  width: 360px;
+  height: 616px;
+}
+.deal-item{
+  position: relative;
+  padding: 15px 0;
+}
+.hover-info{
+  position: absolute;
+  top: 420px;
+  left: 0;
+
+  width: 360px;
+  min-height: 213px;
+
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+
+/*flex links to dif pages at the bottom*/
+.pages-list{
+  list-style-type: none;
+  width: 450px;
+  margin: 60px 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.pages-list li{
+	padding: 0 5px;
+}
+.page-link{
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  background-color: #eeeeee;
+  color: #000;
+}
+.page-link:hover{
+  background-color: #dfdfdf;
+  border: none;
+}
+.page-link:active{
+  background-color: #d5d5d5;
+  border-top: 3px solid rgba(0, 0, 1, 0.1);
+}
+.page-link:focus, 
+.current-page{
+  border: 3px solid #eee;
+  background-color: #fff;
+  color: #000;
+}
+.next-link{
+  width: 260px;
+
+  line-height: 20px;
+
+  background-color: #eeeeee;
+  color: #000;
+
+  border: none;
+}
+.next-link:hover{
+  background-color: #dfdfdf;
+}
+.next-link:active, .next-link:focus{
+  background-color: #d5d5d5;
+  border-top: 3px solid rgba(0, 0, 1, 0.1);
+}
+
+
+.asc-desc-list li{
+  display: inline-block;
+  padding: 0 9px;
+}
+.sort-by-list{
+  align-items: center;
+}
+
+.asc-desc{
+  position: relative;
+  top: -50px;
+  left: 740px;
+}
+.asc-desc-list{
+  position: absolute;
+  top: 30px;
+  left: -10px;
+}
+.asc-desc-list img{
+  opacity: 0.6;
+}
+img[src*="up-dir"]{
+  opacity: 1;
 }

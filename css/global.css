@@ -1,127 +1,298 @@
-/*Здесь описаны правила, которые применимы для всех страниц*/
-body{
-    /*Стили для приведения к одному виду в разных браузерах*/
-    margin: 0px;
-    padding: 0px;
-  /*Настройка шрифтов как на макете*/
-    font-family: 'Roboto', Arial, sans-serif;
-    font-size: 16px;
-    line-height: 18px;
-    color: #000;
-    font-weight: 400;
-  
-    background-color: #fff;
-  }
-  
-  .visually-hidden {
-      position: absolute !important;
-      clip: rect(1px, 1px, 1px, 1px);
-      padding:0 !important;
-      border:0 !important;
-      height: 1px !important; 
-      width: 1px !important; 
-      overflow: hidden;
-  }
-  
-  a{
-    text-decoration: none;
-  }
-
-  /*Шапка сайта*/
-  .main-header{
-    background-color: #eeeeee;
-  }
-  .main-nav, .cart{
-    line-height: 30px;
-  }
-  .main-nav{
-    padding-top: 49px;
-  }
-
-/*Настройка списков*/
-  ul{
-    /*Только у одного списка есть точки слева, поэтому отключаем*/
-    list-style-type: none;
-    padding-left: 0px;
-  }
-  .nav-list li{
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-
-    text-align: center;
 }
-.nav-list a{
-  display: block;
-  padding: 5px 22px;
+.cart-link{
+  position: relative;
+}
+.cart-link::before{
+  content: "";
+
+  width: 16px;
+  height: 18px;
+
+  position: absolute;
+  top: 0;
+  right: 95px;
+
+  background-image: url("../img/svg/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*List styles*/
+ul {
+  list-style-type: none;
+}
+
+/*Headings*/
+h2 {
   color: #000;
-  background-color: #eee;
+  background-color: #fff;
+  font-size: 24px;
+  line-height: 30px
 }
 
-/*Заголовки*/
-  h2 {
-    color: #000;
-    background-color: #fff;
-    font-size: 24px;
-    line-height: 30px
-  }
+/*Links in different states*/
 
-  /*Ссылки в разных состояниях*/
-a:hover{
-    color: #fb565a;
-  }
-  a:active{
-    color: rgb(0, 0, 0, 0.3);
-  }
-  a:focus{
-    text-decoration: underline;
-    text-decoration-color: #fb565a;
-  }
-  /*Кнопки в разных состояниях*/
-  .button{
-    font: inherit;
+.nav-link {
+  color: #000;
+}
+
+.nav-link:hover {
+  color: #fb565a;
+}
+
+.nav-link:focus {
+  text-decoration: underline;
+  text-decoration-color: #fb565a;
+}
+
+.nav-link:active {
+  color: rgb(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+/*Different states of buttons and links that looks like buttons*/
+
+.button {
+  font-family: inherit;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  background-color: #fb565a;
+  color: #fff;
+
+  padding: 15px 15px;
+  margin: 0;
+
+  width: 240px;
+  height: 50px;
+
+  border-width: 3px 0 0 0;
+  border-color: #fb565a;
+  border-style: solid;
+  border-radius: 3px;
   
-    background-color: #fb565a;
-    color: #fff;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #e74246;
+  border-color: #e74246;
+}
+
+.button:focus {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: rgb(0, 0, 0, 0.1);
+}
+
+/*Fonts that differ from inherited ones*/
+
+/*In headings*/
+
+.discount-offer {
+  line-height: 22px;
+}
+
+.company-name, .sort-by-heading {
+  font-size: 18px;
+}
+
+.modal-heading {
+  font-size: 45px;
+  line-height: 45px
+}
+
+/*Bold fonts that aren't heading*/
+
+.appeal {
+  font-size: 36px;
+  line-height: 36px
+}
+
+.modal-field {
+  line-height: 18px;
+}
+
+/*Address and form*/
+
+.address-form {
+  background-color: #fff;
+  width: 300px;
+  padding: 45px 50px;
+}
+.write-us-button{
+  width: 200px;
+}
+
+.address-form{
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+.map-wrapper{
+  position: relative;
+}
+/*Social links*/
+.social-link object{
+  background-color: #e1e1e1;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  border: 10px solid #e1e1e1;
+  border-radius: 50%;
   
-    padding: 5px 15px;
-    margin: 0px;
-    border: 0px;
-  
-    text-decoration: none;
-  }
-  .button:hover{
-    background-color: #e74246;
-  }
-  .button:focus{
-    background-color: #d7373b;
-    color: rgba(255, 255, 255, 0.3);
-  }
-  /*Flex для навигации*/
-  /* .nav-wrapper{
-    display: flex;
-    flex-direction: row;
-    width: 1150px;
-    padding-left: 5px;
-    padding-right: 5px;
-    justify-content: space-between;
-  }
-  .nav-container{
-    width: 100%;
-  }
-  .nav-list{
-    width: 600px;
-  }
-  .cart{
-    width: 160px;
-  } */
-  .main-nav{
-    display: flex;
-    width: 1160px;
-    padding-left: 10px;
-    padding-right: 10px;
-    justify-content: space-between;
-  }
-  .wrapper{
-    width: 100%;
-  }
+}
+.social-link{
+  padding: 10px;
+}
+.soc-media{
+  display: flex;
+  width: 400px;
+  padding: 0 20px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-text{
+  display: flex;
+  justify-content: center;
+  width: 560px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.footer-info{
+  display: flex;
+  width: 1180px;
+  padding: 70px 0;
+  margin: 0 auto;
+}
+
+/*Write us modal*/
+.modal-heading{
+  display: inline-block;
+  padding-bottom: 50px;
+}
+.top-forms{
+  display: flex;
+  width: 760px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+/*write us modal form*/
+.modal-section{
+  display: none;
+}
+.write-us{
+  width: 1000px;
+  height: 590px;
+  color: #000;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  padding: 100px 100px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  position: relative;
+
+  box-shadow: 0 0 15px rgba(0, 1, 1, 0.7);
+}
+.button-close{
+  position: absolute;
+  top: 80px;
+  left: 880px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  border: none;
+
+  background-color: #fff;
+}
+.button-close:hover{
+  background-color: #fff;
+}
+.button-close:focus{
+  background: #fff;
+
+}
+.button-close::before{
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 4px;
+  left: 4px;
+  background-image: url("../img/svg/close-cross.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.button-close:hover:before{
+  opacity: 1;
+}
+.button-close:active::before,
+.button-close:focus::before{
+  opacity: 0.1;
+}
+.button-send{
+  width: 260px;
+}
+
+.top-forms{
+  display: flex;
+  justify-content: space-between;
+}
+.write-us label{
+  display: block;
+}
+.name-form, .email-form{
+  width: 400px;
+  padding: 0 20px;
+}
+.message-form{
+  width: 800px;
+  padding: 0 20px;
+}
+.name-form input, .email-form input{
+  width: 380px;
+  height: 50px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+}
+.message-form textarea{
+  width: 780px;
+  height: 120px;
+  border: 2px solid #d7dcde;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.5);
+  resize: none;
+}
+.write-us legend{
+  padding: 10px 20px
+}
+.button-send{
+  margin: 20px;
+  padding: 10px 20px;
+}
+
+/*Ascending descending sort menu*/
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+/*Modal*/
+.modal-show{
+  display: block;
+}
