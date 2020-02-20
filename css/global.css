@@ -78,6 +78,10 @@ a {
   
   vertical-align: middle;
 }
+.nav-link--active {
+  text-decoration: underline;
+  text-decoration-color: #d7373b;
+}
 /*Background image*/
 /*Cart*/
 .cart{
@@ -224,14 +228,34 @@ h2 {
   position: relative;
 }
 /*Social links*/
-.social-link object{
+/* .social-link object{
   background-color: #e1e1e1;
   width: 60px;
   height: 60px;
   padding: 8px;
   border: 10px solid #e1e1e1;
   border-radius: 50%;
-  
+}
+.social-link object:hover {
+  background-color: #e74246;
+}
+.social-link object:active {
+  background-color: #d7373b;
+  opacity: 0.3;
+} */
+.soc-link {
+  background-color: #e1e1e1;
+  width: 64px;
+  height: 69px;
+  padding: 19px;
+  border-radius: 50%;
+}
+.soc-link:hover {
+  background-color: #e74246;
+}
+.soc-link:active {
+  background-color: #d7373b;
+  opacity: 0.3;;
 }
 .social-link{
   padding: 10px;
