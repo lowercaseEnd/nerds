@@ -311,15 +311,15 @@ form legend{
 .hover-info{
   display: none;
 }
-.item-link:hover+.hover-info,
-.item-link:focus+.hover-info,
-.item-link:active+.hover-info
+.deal-item:hover > .hover-info,
+.deal-item:focus > .hover-info,
+.deal-item:active > .hover-info
 {
   display: block;
 }
-.item-link:hover+.hover-info::after,
-.item-link:active+.hover-info::after,
-.item-link:focus+.hover-info::after{
+.deal-item:hover > .hover-info::after,
+.deal-item:active > .hover-info::after,
+.deal-item:focus > .hover-info::after{
   content: "";
   position: absolute;
   top: -404px;
@@ -330,6 +330,7 @@ form legend{
   background-image: url("../img/svg/browser.svg");
   background-repeat: no-repeat;
 }
+
 /*Flex*/
 .deals-list{
   list-style-type: none;
