@@ -394,6 +394,20 @@ h2 {
   margin: 20px;
   padding: 10px 20px;
 }
+.input-field {
+  outline: none;
+}
+.input-field:hover {
+  border-color: #b4b9bb;
+}
+.input-field:active {
+  border-color: #000000;
+}
+.input-field:invalid {
+  border-color: #e74246;
+  color: #e74246;
+}
+
 
 /*Ascending descending sort menu*/
 ul{
@@ -404,4 +418,7 @@ ul{
 /*Modal*/
 .modal-show{
   display: block;
+  position: fixed;
+  top: 190px;
+  left: 180px; 
 }

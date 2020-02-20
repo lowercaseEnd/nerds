@@ -2,6 +2,7 @@
 //Call and close modal
 let link = document.querySelector(".write-us-button");
 let popup = document.querySelector(".modal-section");
+console.log(popup);
 let close = document.querySelector(".button-close");
 //Modals form and fields 
 let focusField = document.querySelector("[name=user-name]");
